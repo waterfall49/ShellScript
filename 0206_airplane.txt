@@ -1,0 +1,248 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Application {
+	
+	Boolean myArray[][] = new Boolean[4][4];
+	Scanner scanObj = new Scanner(System.in);
+	ArrayList<String> booked_list = new ArrayList<String>();
+
+	public void start(){
+		
+		for(int row=0; row<myArray.length; row++){
+			for(int col=0; col<myArray[0].length; col++){
+				myArray[row][col] = false; }}
+		
+		String seat_number = "";
+		String Booked_Info;
+		String myClass ="";
+		boolean loop = true;
+		
+		test:   // loop start!! 
+		do{
+			String Fname = forinput_name("first name");
+			String Lname = forinput_name("last name");
+			int mySeat_class = forinput_num("Please type 1 for First Class or 2 for Economy");
+			if(mySeat_class == 1 && myArray[1][2] && myArray[1][3]){
+				System.out.println("Sorry, First class is fully booked");
+				mySeat_class = forinput_num("If you want to reserve Economy class, Please enter '2' (1 for Exit)");
+				if(mySeat_class!=2)
+				  continue test;}
+			else if(mySeat_class == 2 && myArray[3][2] && myArray[3][3]){
+				System.out.println("Sorry, First class is fully booked");
+				mySeat_class = forinput_num("If you want to reserve First class, Please enter '1' (2 for Exit)");
+				if(mySeat_class!=1)
+				  continue test;}
+				
+			int mySeat_type = forinput_num("Please type '1' for window and '2' for Isle");
+			
+	        if (mySeat_class == 1){
+	        	seat_number = FirstClass(mySeat_type);
+	        	myClass = "First Class";
+	        	if(seat_number.equals("q")){
+	        		continue test;}}
+	        else if(mySeat_class == 2){
+	        	seat_number = EconomyClass(mySeat_type);
+	        	myClass = "Economy Class";
+	        	if(seat_number.equals("q")){
+	        		continue test;}}
+	        
+	        System.out.println("------------------------------------");
+	        System.out.println("        *** Boarding Pass ***       ");
+	        System.out.println("------------------------------------");
+	        System.out.println("       Name  : " + Fname + " " + Lname);
+	        System.out.println("       Seat  : " + seat_number);
+	        System.out.println("       Class : " + myClass);
+	        System.out.println("------------------------------------");	      
+	        
+	        PrintArray(myArray);     	        
+	        	
+	        Booked_Info = Fname + " " + Lname + " : " + seat_number;
+	        booked_list.add(Booked_Info);
+	        
+	        if(myArray[1][3] && myArray[1][2] && myArray[3][3] && myArray[3][2]){
+	        	System.out.println("Sorry, This flight is fully booked, Next flight leaves in 3hours");
+	        	break;}
+	        
+	        String keep_going="";
+	        System.out.println("");
+			System.out.println("Enter 'y' for keepgong / Any other for Exit: ");
+			keep_going = scanObj.nextLine();
+			keep_going.toLowerCase();
+			if(keep_going.equals("y"))
+				loop = true;
+			else
+				loop = false;		
+		 }while(loop);
+
+		Collections.sort(booked_list);
+				
+		System.out.println("");
+		System.out.println("--------- Booking List ---------");
+		for(int i=0; i<booked_list.size(); i++ ){
+			System.out.println(booked_list.get(i));}
+		
+	}//end start
+	
+	public void PrintArray(Boolean[][] A_Array){
+		
+		System.out.println();
+		System.out.println("----< Reservation Status >----");
+		for(int row=0; row<A_Array.length; row++){
+			for(int col=0; col<A_Array[0].length; col++){
+				if(col<3)
+					if(A_Array[row][col]==false){
+						System.out.print("Avail "+" ");}
+					else{
+						System.out.print("Booked"+" ");}
+				else
+					if(A_Array[row][col]==false){
+						System.out.println("Avail "+" ");}
+					else{
+						System.out.println("Booked"+" ");}}}}//outside for
+	
+	public String FirstClass(int seat_type){
+		
+		boolean loop = false;
+		String seat_number="";
+		
+		if(seat_type ==2 && myArray[1][2]==true){
+			System.out.println("Aisle seat is fully booked. If you want a window seat, enter 'y', If you don't, enter anything except 'y'");
+			String ans = scanObj.nextLine();
+			if(ans.equals("y")){
+				seat_type = 1;}
+			else{
+				seat_number="q";}}
+		else if(seat_type == 1 && myArray[1][3]==true){
+			System.out.println("Window seat is fully booked. If you want a aisle seat, enter 'y', If you don't, enter anything except 'y'");
+			String ans1 = scanObj.nextLine();
+			if(ans1.equals("y")){
+				seat_type = 2;}
+			else{
+				seat_number="q";}}
+		
+		switch(seat_type){
+		case 1: //for window seat
+			for(int i=0; i<2; i++){
+				for(int n=0; n<4; n++){
+					if(myArray[i][n] == false){
+						if(seat_type==1 && (n==0 || n==3)){
+							myArray[i][n] = true;
+							char c = (char)(n+65);
+							seat_number = Integer.toString((i+1))+c;
+							return seat_number;}}}
+				if(loop){
+					break;}}break;				 
+		case 2://for aisle seat  
+			for(int i=0; i<2; i++){
+				for(int n=0; n<4; n++){
+					if(myArray[i][n] == false){
+						if(seat_type==2 && (n==1 || n==2)){
+							myArray[i][n] = true;
+							char c = (char)(n+65);
+							seat_number = Integer.toString((i+1))+c;	
+							return seat_number;}}}
+				if(loop){
+					break;}}break;
+		default:
+			break;}//end switch		
+		return seat_number;}//end FirstClass
+	
+	public String EconomyClass(int seat_type){
+		
+		boolean loop = false;
+		String seat_number="";
+		
+		if(seat_type ==2 && myArray[3][2]==true){
+			System.out.println("Aisle seat is fully booked. If you want a window seat, enter 'y', If you don't, enter anything except 'y'");
+			String ans = scanObj.nextLine();
+			if(ans.equals("y")){
+				seat_type = 1;}
+			else{
+				seat_number="q";}}
+		else if(seat_type == 1 && myArray[3][3]==true){
+			System.out.println("Window seat is fully booked. If you want a aisle seat, enter 'y', If you don't, enter anything except 'y'");
+			String ans1 = scanObj.nextLine();
+			if(ans1.equals("y")){
+				seat_type = 2;}
+			else{
+				seat_number="q";}}
+		
+		switch(seat_type){
+		case 1: //for window seat
+			for(int i=2; i<4; i++){
+				for(int n=0; n<4; n++){
+					if(myArray[i][n] == false){
+						if(seat_type==1 && (n==0 || n==3)){
+							myArray[i][n] = true;
+							char c = (char)(n+65);
+							seat_number = Integer.toString((i+1))+c;
+							return seat_number;}}}
+				if(loop){
+					break;}}break;				 
+		case 2://for aisle seat  
+			for(int i=2; i<4; i++){
+				for(int n=0; n<4; n++){
+					if(myArray[i][n] == false){
+						if(seat_type==2 && (n==1 || n==2)){
+							myArray[i][n] = true;
+							char c = (char)(n+65);
+							seat_number = Integer.toString((i+1))+c;	
+							return seat_number;}}}
+				if(loop){
+					break;}}break;}//end switch		
+		return seat_number;}//end EconomyClass
+	
+	//----------------- input validation for name ----------------	
+	public String forinput_name(String name_type){
+		String Maybe_name;
+		boolean loop;
+		do{
+			System.out.println("Please enter your "+name_type+" :");
+			Maybe_name = scanObj.nextLine();
+			if(validate_string(Maybe_name)==true){
+				break;}//end if
+			else{
+				System.out.println("You entered invalid input");
+				loop = true;}//end else
+		} while(loop); //end do
+		return Maybe_name;}//end forinput_name
+	
+	public boolean validate_string(String s){
+        boolean valid = true;
+        int i = 0;
+        if (s.length() == 0)  // set valid to 'false' if empty string
+            valid = false;  
+        while (i < s.length()){ // set valid to 'false' if a character is no a digit
+            if (!Character.isAlphabetic(s.charAt(i))){
+                valid = false;
+                break;}//end if
+            i++; }//end while
+        return valid; }//end method validate
+	
+	//----------------- input validation for number ----------------	
+	public int forinput_num(String Msg){
+		String Maybe_num;
+		int num = 0;
+		boolean loop;
+		String ref = "\\d+";
+		do{
+			System.out.println(Msg);
+			Maybe_num = scanObj.nextLine();
+			if(Maybe_num.matches(ref)){
+				num = Integer.parseInt(Maybe_num);
+				if(num == 1 || num == 2)
+					break;
+				else{
+					System.out.println("You entered invalid input");
+					loop = true;}}
+			else{
+				System.out.println("You entered invalid input");
+				loop = true;}}while(loop);
+		return num;}
+	
+}//end class
+
+
+

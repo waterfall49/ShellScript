@@ -1,0 +1,90 @@
+osys1000@Cathy-virtual-machine:~$ script new_Cathy_file.txt
+Script started, file is new_Cathy_file.txt
+osys1000@Cathy-virtual-machine:~$ whoami
+osys1000
+osys1000@Cathy-virtual-machine:~$ cd Desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ pwd
+/home/osys1000/Desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ Is
+Is: command not found
+osys1000@Cathy-virtual-machine:~/Desktop$ ls
+gnome-terminal.desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ CD ../..
+CD: command not found
+osys1000@Cathy-virtual-machine:~/Desktop$ cd ../..
+osys1000@Cathy-virtual-machine:/home$ pwd
+/home
+osys1000@Cathy-virtual-machine:/home$ cd ~
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ exit
+exit
+Script done, file is new_Cathy_file.txt
+osys1000@Cathy-virtual-machine:~$ clear
+
+osys1000@Cathy-virtual-machine:~$ cat new_Cathy_file.txt 
+Script started on 2019-01-16 07:53:07-0500
+osys1000@Cathy-virtual-machine:~$ whoami
+osys1000
+osys1000@Cathy-virtual-machine:~$ cd Desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ pwd
+/home/osys1000/Desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ Is
+Is: command not found
+osys1000@Cathy-virtual-machine:~/Desktop$ ls
+gnome-terminal.desktop
+osys1000@Cathy-virtual-machine:~/Desktop$ CD ../..
+CD: command not found
+osys1000@Cathy-virtual-machine:~/Desktop$ cd ../..
+osys1000@Cathy-virtual-machine:/home$ pwd
+/home
+osys1000@Cathy-virtual-machine:/home$ cd ~
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ exit
+exit
+
+Script done on 2019-01-16 07:58:36-0500
+osys1000@Cathy-virtual-machine:~$ ^C
+osys1000@Cathy-virtual-machine:~$ 
+
+drwxr-xr-x 24 osys1000 osys1000  4096 Jan 14 09:09 .gimp-2.8
+drwx------  3 osys1000 osys1000  4096 Jan  7 09:06 .gnupg
+-rw-r--r--  1 osys1000 osys1000    22 Jan  7 08:59 .gtkrc-2.0
+-rw-r--r--  1 osys1000 osys1000   516 Jan  7 08:59 .gtkrc-xfce
+-rw-------  1 osys1000 osys1000  2646 Jan 19 14:16 .ICEauthority
+drwx------  3 osys1000 osys1000  4096 Jan  7 09:06 .local
+-rwxrw-rw-  1 osys1000 osys1000    16 Jan  7 21:29 Message2.txt
+-rwxrw-rw-  1 osys1000 osys1000     5 Jan  7 21:27 Message.txt
+drwx------  5 osys1000 osys1000  4096 Jan  7 09:06 .mozilla
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 Music
+-rw-r--r--  1 osys1000 osys1000  1622 Jan 16 07:58 new_Cathy_file.txt
+-rwxrw-rw-  1 osys1000 osys1000     9 Jan 14 07:47 new.txt
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 08:53 Pictures
+-rw-r--r--  1 osys1000 osys1000   807 Jan  7 08:59 .profile
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 Public
+-rw-r--r--  1 osys1000 osys1000     0 Jan  7 20:52 .sudo_as_admin_successful
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 Templates
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 Videos
+-rw-------  1 osys1000 osys1000    66 Jan 19 14:16 .Xauthority
+-rw-------  1 osys1000 osys1000 10546 Jan 19 14:21 .xsession-errors
+-rw-------  1 osys1000 osys1000  7636 Jan 19 13:02 .xsession-errors.old
+osys1000@Cathy-virtual-machine:~$ ^C
+osys1000@Cathy-virtual-machine:~$ clear
+
+osys1000@Cathy-virtual-machine:~$ date
+Sat Jan 19 14:53:56 EST 2019
+osys1000@Cathy-virtual-machine:~$ touch new_file.txt
+osys1000@Cathy-virtual-machine:~$ cd /
+osys1000@Cathy-virtual-machine:/$ ls
+bin    dev   initrd.img      lib64       mnt   root  srv       tmp  vmlinuz
+boot   etc   initrd.img.old  lost+found  opt   run   swapfile  usr
+cdrom  home  lib             media       proc  sbin  sys       var
+osys1000@Cathy-virtual-machine:/$ touch /another_file.txt
+touch: cannot touch '/another_file.txt': Permission denied
+osys1000@Cathy-virtual-machine:/$ sudo touch /another_file.txt
+[sudo] password for osys1000: 
+osys1000@Cathy-virtual-machine:/$ sudo rm /another_file.txt
+osys1000@Cathy-virtual-machine:/$ ^C
+osys1000@Cathy-virtual-machine:/$ 
+

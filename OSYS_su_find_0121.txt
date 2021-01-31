@@ -1,0 +1,158 @@
+osys1000@Cathy-virtual-machine:~$ script new_Cathy_script.txt
+Script started, file is new_Cathy_script.txt
+osys1000@Cathy-virtual-machine:~$ su
+Password: 
+su: Authentication failure
+osys1000@Cathy-virtual-machine:~$ sudo passwd root
+[sudo] password for osys1000: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+osys1000@Cathy-virtual-machine:~$ su
+Password: 
+root@Cathy-virtual-machine:/home/osys1000# whoami
+root
+root@Cathy-virtual-machine:/home/osys1000# sh
+# pwd
+/home/osys1000
+# clear   
+# ls
+a_nice_long_named_file	Desktop       Music		    Pictures
+assignment_BHJ.txt	Documents     new_Cathy_file.txt    Public
+BHJ_1.txt		Downloads     new_Cathy_script.txt  Templates
+Cathy_exercise2.txt	Message2.txt  new_file.txt	    Videos
+Cathy_script.txt	Message.txt   new.txt
+# bash   	
+root@Cathy-virtual-machine:/home/osys1000# exit
+exit
+# exit
+root@Cathy-virtual-machine:/home/osys1000# exit
+exit
+osys1000@Cathy-virtual-machine:~$ whoami
+osys1000
+osys1000@Cathy-virtual-machine:~$ exit
+exit
+Script done, file is new_Cathy_script.txt
+osys1000@Cathy-virtual-machine:~$ 
+
+--------------------- exercise 3 -------------------------------------------
+
+osys1000@Cathy-virtual-machine:~$ script Cathy_exercise3_again.txt
+Script started, file is Cathy_exercise3_again.txt
+osys1000@Cathy-virtual-machine:~$ locate fstab
+/etc/fstab
+/lib/systemd/system-generators/systemd-fstab-generator
+/sbin/fstab-decode
+/usr/share/doc/m4/examples/fstab.m4
+/usr/share/doc/mount/examples/fstab
+/usr/share/doc/mount/examples/mount.fstab
+/usr/share/doc/util-linux/examples/fstab
+/usr/share/doc/util-linux/examples/fstab.example2
+/usr/share/initramfs-tools/scripts/casper-bottom/12fstab
+/usr/share/man/man5/fstab.5.gz
+/usr/share/man/man8/fstab-decode.8.gz
+/usr/share/man/man8/systemd-fstab-generator.8.gz
+osys1000@Cathy-virtual-machine:~$ su
+Password: 
+root@Cathy-virtual-machine:/home/osys1000# find /var -name "syslog"
+/var/log/installer/syslog
+/var/log/syslog
+root@Cathy-virtual-machine:/home/osys1000# find /etc -size +64k
+/etc/apparmor.d/cache/usr.sbin.cupsd
+/etc/apparmor.d/cache/usr.lib.libreoffice.program.soffice.bin
+/etc/apparmor.d/cache/lightdm-guest-session
+/etc/apparmor.d/cache/sbin.dhclient
+/etc/ssl/certs/ca-certificates.crt
+/etc/ssl/certs/java/cacerts.dpkg-old
+/etc/ssl/certs/java/cacerts
+/etc/mono/browscap.ini
+/etc/vmware-tools/vgauth/schemas/XMLSchema.xsd
+/etc/ssh/moduli
+/etc/brltty/Contraction/zh-tw-ucb.ctb
+/etc/brltty/Contraction/zh-tw.ctb
+/etc/brltty/Contraction/ko.ctb
+/etc/lvm/lvm.conf
+/etc/ImageMagick-6/mime.xml
+/etc/ld.so.cache
+root@Cathy-virtual-machine:/home/osys1000# find /var -mmin -15
+/var/lib/NetworkManager/dhclient-02ff4515-d957-3d69-a9c5-5db805532ec0-ens33.lease
+/var/lib/systemd/timers/stamp-anacron.timer
+/var/lib/private/systemd/timesync/clock
+/var/log/syslog
+/var/log/auth.log
+/var/log/journal/ef635a010d284bc38d762d2b9f0e65ac/user-1000.journal
+/var/log/journal/ef635a010d284bc38d762d2b9f0e65ac/system.journal
+root@Cathy-virtual-machine:/home/osys1000# find /boot -type d
+/boot
+/boot/grub
+/boot/grub/locale
+/boot/grub/i386-pc
+/boot/grub/fonts
+root@Cathy-virtual-machine:/home/osys1000# exit
+exit
+osys1000@Cathy-virtual-machine:~$ find /var -name "syslog"
+find: ¡®/var/cache/lightdm/dmrc¡¯: Permission denied
+find: ¡®/var/cache/apt/archives/partial¡¯: Permission denied
+find: ¡®/var/cache/ldconfig¡¯: Permission denied
+find: ¡®/var/cache/cups¡¯: Permission denied
+find: ¡®/var/lib/colord/.cache¡¯: Permission denied
+find: ¡®/var/lib/polkit-1¡¯: Permission denied
+find: ¡®/var/lib/lightdm¡¯: Permission denied
+find: ¡®/var/lib/lightdm-data/lightdm¡¯: Permission denied
+find: ¡®/var/lib/udisks2¡¯: Permission denied
+find: ¡®/var/lib/bluetooth/8C:A9:82:E3:7A:69¡¯: Permission denied
+find: ¡®/var/lib/private¡¯: Permission denied
+find: ¡®/var/lib/apt/lists/partial¡¯: Permission denied
+find: ¡®/var/tmp/systemd-private-4da5dff605d945cfb640bac9beaf3960-systemd-timesyncd.service-OAavI9¡¯: Permission denied
+find: ¡®/var/tmp/systemd-private-4da5dff605d945cfb640bac9beaf3960-systemd-resolved.service-vrBA4c¡¯: Permission denied
+find: ¡®/var/tmp/systemd-private-4da5dff605d945cfb640bac9beaf3960-rtkit-daemon.service-aBelvL¡¯: Permission denied
+find: ¡®/var/tmp/systemd-private-4da5dff605d945cfb640bac9beaf3960-colord.service-u0EVhk¡¯: Permission denied
+find: ¡®/var/log/speech-dispatcher¡¯: Permission denied
+/var/log/installer/syslog
+/var/log/syslog
+find: ¡®/var/spool/cron/crontabs¡¯: Permission denied
+find: ¡®/var/spool/rsyslog¡¯: Permission denied
+find: ¡®/var/spool/cups¡¯: Permission denied
+osys1000@Cathy-virtual-machine:~$ su
+Password: 
+root@Cathy-virtual-machine:/home/osys1000# find /var -name "syslog"
+/var/log/installer/syslog
+/var/log/syslog
+root@Cathy-virtual-machine:/home/osys1000# find /etc -size +64k
+/etc/apparmor.d/cache/usr.sbin.cupsd
+/etc/apparmor.d/cache/usr.lib.libreoffice.program.soffice.bin
+/etc/apparmor.d/cache/lightdm-guest-session
+/etc/apparmor.d/cache/sbin.dhclient
+/etc/ssl/certs/ca-certificates.crt
+/etc/ssl/certs/java/cacerts.dpkg-old
+/etc/ssl/certs/java/cacerts
+/etc/mono/browscap.ini
+/etc/vmware-tools/vgauth/schemas/XMLSchema.xsd
+/etc/ssh/moduli
+/etc/brltty/Contraction/zh-tw-ucb.ctb
+/etc/brltty/Contraction/zh-tw.ctb
+/etc/brltty/Contraction/ko.ctb
+/etc/lvm/lvm.conf
+/etc/ImageMagick-6/mime.xml
+/etc/ld.so.cache
+root@Cathy-virtual-machine:/home/osys1000# find /var -mmin -15
+/var/lib/NetworkManager/dhclient-02ff4515-d957-3d69-a9c5-5db805532ec0-ens33.lease
+/var/lib/systemd/timers/stamp-anacron.timer
+/var/lib/private/systemd/timesync/clock
+/var/log/syslog
+/var/log/auth.log
+/var/log/journal/ef635a010d284bc38d762d2b9f0e65ac/user-1000.journal
+/var/log/journal/ef635a010d284bc38d762d2b9f0e65ac/system.journal
+root@Cathy-virtual-machine:/home/osys1000# find /boot -type d
+/boot
+/boot/grub
+/boot/grub/locale
+/boot/grub/i386-pc
+/boot/grub/fonts
+root@Cathy-virtual-machine:/home/osys1000# exit
+exit
+osys1000@Cathy-virtual-machine:~$ exit
+exit
+Script done, file is Cathy_exercise3_again.txt
+osys1000@Cathy-virtual-machine:~$ 
+

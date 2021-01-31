@@ -1,0 +1,86 @@
+Script started on 2019-01-21 07:37:02-0500
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ whoca[K[Kami
+osys1000
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ pwd
+/home/osys1000
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ date
+Mon Jan 21 07:37:25 EST 2019
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ uname -a
+Linux Cathy-virtual-machine 4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ touch you[K[K[KBHJ_1.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls
+a_nice_long_named_file  [0m[01;34mDesktop[0m       [01;34mMusic[0m               [01;34mPublic[0m
+assignment_BHJ.txt      [01;34mDocuments[0m     new_Cathy_file.txt  [01;34mTemplates[0m
+BHJ_1.txt               [01;34mDownloads[0m     new_file.txt        [01;34mVideos[0m
+Cathy_exercise2.txt     [01;32mMessage2.txt[0m  [01;32mnew.txt[0m
+Cathy_script.txt        [01;32mMessage.txt[0m   [01;34mPictures[0m
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ la[Ks -a[Kla
+total 156
+drwxr-xr-x 18 osys1000 osys1000  4096 Jan 21 07:38 [0m[01;34m.[0m
+drwxr-xr-x  3 root     root      4096 Jan  7 08:59 [01;34m..[0m
+-rw-rw-r--  1 osys1000 osys1000     6 Jan 16 09:08 a_nice_long_named_file
+-rw-r--r--  1 osys1000 osys1000     0 Jan 21 07:37 assignment_BHJ.txt
+-rw-------  1 osys1000 osys1000  1416 Jan 19 16:19 .bash_history
+-rw-r--r--  1 osys1000 osys1000   220 Jan  7 08:59 .bash_logout
+-rw-r--r--  1 osys1000 osys1000  3771 Jan  7 08:59 .bashrc
+-rw-r--r--  1 osys1000 osys1000     0 Jan 21 07:38 BHJ_1.txt
+drwx------ 16 osys1000 osys1000  4096 Jan 14 08:52 [01;34m.cache[0m
+-rw-r--r--  1 osys1000 osys1000  2446 Jan 16 08:13 Cathy_exercise2.txt
+-rw-r--r--  1 osys1000 osys1000  3725 Jan 19 16:09 Cathy_script.txt
+drwxrwxr-x  6 osys1000 osys1000  4096 Jan 14 08:46 [01;34m.cinnamon[0m
+drwxr-xr-x 17 osys1000 osys1000  4096 Jan 14 08:42 [01;34m.config[0m
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 08:18 [01;34mDesktop[0m
+-rw-r--r--  1 osys1000 osys1000    27 Jan  7 09:06 .dmrc
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 08:45 [01;34mDocuments[0m
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34mDownloads[0m
+drwx------  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34m.gconf[0m
+drwxr-xr-x 24 osys1000 osys1000  4096 Jan 14 09:09 [01;34m.gimp-2.8[0m
+drwx------  3 osys1000 osys1000  4096 Jan  7 09:06 [01;34m.gnupg[0m
+-rw-r--r--  1 osys1000 osys1000    22 Jan  7 08:59 .gtkrc-2.0
+-rw-r--r--  1 osys1000 osys1000   516 Jan  7 08:59 .gtkrc-xfce
+-rw-------  1 osys1000 osys1000  3024 Jan 21 07:29 .ICEauthority
+drwx------  3 osys1000 osys1000  4096 Jan  7 09:06 [01;34m.local[0m
+-rwxrw-rw-  1 osys1000 osys1000    16 Jan  7 21:29 [01;32mMessage2.txt[0m
+-rwxrw-rw-  1 osys1000 osys1000     5 Jan  7 21:27 [01;32mMessage.txt[0m
+drwx------  5 osys1000 osys1000  4096 Jan  7 09:06 [01;34m.mozilla[0m
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34mMusic[0m
+-rw-r--r--  1 osys1000 osys1000  1622 Jan 16 07:58 new_Cathy_file.txt
+-rw-r--r--  1 osys1000 osys1000     0 Jan 19 14:55 new_file.txt
+-rwxrw-rw-  1 osys1000 osys1000     9 Jan 14 07:47 [01;32mnew.txt[0m
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 08:53 [01;34mPictures[0m
+-rw-r--r--  1 osys1000 osys1000   807 Jan  7 08:59 .profile
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34mPublic[0m
+-rw-r--r--  1 osys1000 osys1000     0 Jan  7 20:52 .sudo_as_admin_successful
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34mTemplates[0m
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 09:06 [01;34mVideos[0m
+-rw-------  1 osys1000 osys1000    66 Jan 21 07:29 .Xauthority
+-rw-------  1 osys1000 osys1000  7845 Jan 21 07:35 .xsession-errors
+-rw-------  1 osys1000 osys1000 10790 Jan 19 16:19 .xsession-errors.old
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ man passwd
+[?1049h[22;0;0t[?1h=PASSWD(1)                        User Commands                       PASSWD(1)[m
+[m
+[1mNAME[0m[m
+       passwd - change user password[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mpasswd[0m [[4moptions[24m] [[4mLOGIN[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mpasswd[0m command changes passwords for user accounts. A normal user[m
+       may only change the password for his/her own account, while the[m
+       superuser may change the password for any account.  [1mpasswd[0m also changes[m
+       the account or associated password validity period.[m
+[m
+   [1mPassword[0m [1mChanges[0m[m
+       The user is first prompted for his/her old password, if one is present.[m
+       This password is then encrypted and compared against the stored[m
+       password. The user has only one chance to enter the correct password.[m
+       The superuser is permitted to bypass this step so that forgotten[m
+       passwords may be changed.[m
+[m
+       After the password has been entered, password aging information is[m
+       checked to see if the user is permitted to change the password at this[m
+[7m Manual page passwd(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-01-21 07:39:19-0500

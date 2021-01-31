@@ -1,0 +1,141 @@
+Script started on 2019-01-27 14:25:00-0400
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ la[Ks -la > folder.[K_listing.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ pwd >> folder_listing.txt 
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat folder_listing.txt 
+total 200
+drwxr-xr-x 18 osys1000 osys1000  4096 Jan 27 14:25 .
+drwxr-xr-x  3 root     root      4096 Jan  7 09:59 ..
+-rw-r--r--  1 osys1000 osys1000     0 Jan 27 14:25 assign2_Cathy.txt
+-rw-------  1 osys1000 osys1000  8961 Jan 27 14:23 .bash_history
+-rw-r--r--  1 osys1000 osys1000   220 Jan  7 09:59 .bash_logout
+-rw-r--r--  1 osys1000 osys1000  3771 Jan  7 09:59 .bashrc
+drwx------ 16 osys1000 osys1000  4096 Jan 14 09:52 .cache
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 11:40 cathy.txt
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 11:40 Cathy.txt
+drwxrwxr-x  6 osys1000 osys1000  4096 Jan 14 09:46 .cinnamon
+drwxr-xr-x 17 osys1000 osys1000  4096 Jan 14 09:42 .config
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 09:18 Desktop
+-rw-r--r--  1 osys1000 osys1000    27 Jan  7 10:06 .dmrc
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 23 11:29 Documents
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Downloads
+-rw-r--r--  1 osys1000 osys1000     0 Jan 27 14:25 folder_listing.txt
+drwx------  2 osys1000 osys1000  4096 Jan  7 10:06 .gconf
+drwxr-xr-x 24 osys1000 osys1000  4096 Jan 14 10:09 .gimp-2.8
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .gnupg
+-rw-r--r--  1 osys1000 osys1000    22 Jan  7 09:59 .gtkrc-2.0
+-rw-r--r--  1 osys1000 osys1000   516 Jan  7 09:59 .gtkrc-xfce
+-rw-------  1 osys1000 osys1000  4536 Jan 27 13:58 .ICEauthority
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .local
+drwx------  5 osys1000 osys1000  4096 Jan  7 10:06 .mozilla
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Music
+-rw-r--r--  1 osys1000 osys1000 12288 Jan 23 11:27 .output_file.txt.swp
+drwxr-xr-x  3 osys1000 osys1000  4096 Jan 26 17:28 Pictures
+-rw-r--r--  1 osys1000 osys1000   807 Jan  7 09:59 .profile
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Public
+-rw-r--r--  1 osys1000 osys1000     0 Jan  7 21:52 .sudo_as_admin_successful
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Templates
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Videos
+-rw-------  1 osys1000 osys1000    66 Jan 27 13:58 .Xauthority
+-rw-------  1 osys1000 osys1000  9730 Jan 27 14:23 .xsession-errors
+-rw-------  1 osys1000 osys1000 12287 Jan 26 18:30 .xsession-errors.old
+-rw-r--r--  1 osys1000 osys1000 42646 Jan 21 09:47 .zcompdump
+/home/osys1000
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find[K[K[K[Kcat libfiles.txt 
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls
+assign2_Cathy.txt  [0m[01;34mDesktop[0m    folder_listing.txt  [01;34mPictures[0m   [01;34mVideos[0m
+cathy.txt          [01;34mDocuments[0m  libfiles.txt        [01;34mPublic[0m
+Cathy.txt          [01;34mDownloads[0m  [01;34mMusic[0m               [01;34mTemplates[0m
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls | sort -f -r
+Videos
+Templates
+Public
+Pictures
+Music
+libfiles.txt
+folder_listing.txt
+Downloads
+Documents
+Desktop
+Cathy.txt
+cathy.txt
+assign2_Cathy.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find -type f | grep -i cahty[K[K[Kthy
+./Documents/[01;31m[KCathy[m[K_exercise3_again.txt
+./Documents/[01;31m[KCathy[m[K_script.txt
+./Documents/[01;31m[KCathy[m[K_exercise4.txt
+./Documents/[01;31m[KCathy[m[K_exercise3.txt
+./Documents/new_[01;31m[KCathy[m[K_script.txt
+./Documents/new_[01;31m[KCathy[m[K_file.txt
+./Documents/[01;31m[KCathy[m[K_exercise2.txt
+./assign2_[01;31m[KCathy[m[K.txt
+./[01;31m[Kcathy[m[K.txt
+./[01;31m[KCathy[m[K.txt
+./.local/share/Trash/files/assign2_[01;31m[KCathy[m[K.txt
+./.local/share/Trash/files/assign2_[01;31m[KCathy[m[K.2.txt
+./.local/share/Trash/info/assign2_[01;31m[KCathy[m[K.txt.trashinfo
+./.local/share/Trash/info/assign2_[01;31m[KCathy[m[K.2.txt.trashinfo
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cd /dev
+]0;osys1000@Cathy-virtual-machine: /dev[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m/dev[00m$ ls -la | grep vcsvi[K[K
+crw-rw----   1 root tty       7,   0 Jan 27 13:58 [01;31m[Kvcs[m[K
+crw-rw----   1 root tty       7,   1 Jan 27 13:58 [01;31m[Kvcs[m[K1
+crw-rw----   1 root tty       7,   2 Jan 27 13:58 [01;31m[Kvcs[m[K2
+crw-rw----   1 root tty       7,   3 Jan 27 13:58 [01;31m[Kvcs[m[K3
+crw-rw----   1 root tty       7,   4 Jan 27 13:58 [01;31m[Kvcs[m[K4
+crw-rw----   1 root tty       7,   5 Jan 27 13:58 [01;31m[Kvcs[m[K5
+crw-rw----   1 root tty       7,   6 Jan 27 13:58 [01;31m[Kvcs[m[K6
+crw-rw----   1 root tty       7,   7 Jan 27 13:58 [01;31m[Kvcs[m[K7
+crw-rw----   1 root tty       7, 128 Jan 27 13:58 [01;31m[Kvcs[m[Ka
+crw-rw----   1 root tty       7, 129 Jan 27 13:58 [01;31m[Kvcs[m[Ka1
+crw-rw----   1 root tty       7, 130 Jan 27 13:58 [01;31m[Kvcs[m[Ka2
+crw-rw----   1 root tty       7, 131 Jan 27 13:58 [01;31m[Kvcs[m[Ka3
+crw-rw----   1 root tty       7, 132 Jan 27 13:58 [01;31m[Kvcs[m[Ka4
+crw-rw----   1 root tty       7, 133 Jan 27 13:58 [01;31m[Kvcs[m[Ka5
+crw-rw----   1 root tty       7, 134 Jan 27 13:58 [01;31m[Kvcs[m[Ka6
+crw-rw----   1 root tty       7, 135 Jan 27 13:58 [01;31m[Kvcs[m[Ka7
+]0;osys1000@Cathy-virtual-machine: /dev[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m/dev[00m$ cd ~
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ vi colours.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"colours.txt" [New File][2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?2004l[?25l[mr[?25h[?25le[?25h[?25ld[?25h[?25l[2;1H[K[2;1H[?25h[?25lb[?25h[?25ll[?25h[?25lu[?25h[?25le[?25h[?25l[3;1H[K[3;1H[?25h[?25lg[?25h[?25lr[?25h[?25le[?25h[?25le[?25h[?25ln[?25h[?25l[4;1H[K[4;1H[?25h[?25ly[?25h[?25le[?25h[?25ll[?25h[?25ll[?25h[?25lo[?25h[?25lw[?25h[?25l[5;1H[K[5;1H[?25h[?25lg[?25h[?25lr[?25h[?25le[?25h[?25le[?25h[?25ln[?25h[?25l[6;1H[K[6;1H[?25h[?2004h[?25l[24;1H[K[24;1H:[?2004h[?25hwq![?25l[?2004l"colours.txt" [New File] 6 lines, 29 characters written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat /var[K[K[K[Kcolours.txt | sort | uniq | tee sortedColo urs.txt
+
+blue
+green
+red
+yellow
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat /var/log/syslog | grep dhc | more
+Jan 27 14:12:21 Cathy-virtual-machine dhclient[978]: DHCPREQUEST of 192.168.94.1
+32 on ens33 to 192.168.94.254 port 67 (xid=0x33aa2509)
+Jan 27 14:12:21 Cathy-virtual-machine dhclient[978]: DHCPACK of 192.168.94.132 f
+rom 192.168.94.254
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+264] dhcp4 (ens33):   address 192.168.94.132
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+264] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+264] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+264] dhcp4 (ens33):   lease time 1800
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+265] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+265] dhcp4 (ens33):   domain name 'localdomain'
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+265] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 27 14:12:21 Cathy-virtual-machine NetworkManager[856]: <info>  [1548612741.8
+265] dhcp4 (ens33): state changed bound -> bound
+Jan 27 14:12:21 Cathy-virtual-machine dhclient[978]: bound to 192.168.94.132 -- 
+renewal in 683 seconds.
+Jan 27 14:12:21 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33
+[7m--More--[27m[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /bin -size +64k -type f | grep sh | wc -l [A
+3
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-01-27 14:34:04-0400

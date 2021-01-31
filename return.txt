@@ -1,0 +1,3 @@
+return (input.equals("1") || input.equals("2))? 
+true : 
+false : 

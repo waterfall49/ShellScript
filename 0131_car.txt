@@ -1,0 +1,154 @@
+
+public class Launcher {
+
+	public static void main(String[] args) {
+		Application app = new Application();
+		app.start();
+	}
+}
+
+-----------------------------------------------------------------------
+
+public class Application {
+	public void start(){
+		//Car mycar = new Car(); //can't do, is abstract
+		FordFury myFury = new FordFury(); //concrete - object made
+		MazdaRX7 myRX7 = new MazdaRX7();
+		
+		myFury.setColor("Red");
+		System.out.println(myFury.getColor());
+		System.out.println(myRX7.getColor());
+		
+		System.out.println(myRX7.getTire().getBrand());
+		myFury.getTire().setBrand("Michellin");
+		System.out.println(myFury.getTire().getBrand());
+
+		System.out.println(myFury.go());
+		System.out.println(myFury.motto());
+		System.out.println(myFury.go());
+		System.out.println(myFury.motto());
+		
+	}
+
+}//end class
+
+-------------------------------------------------------------------------
+
+
+public abstract class Car {
+	//properties
+	private String color;
+	private int topSpeed;
+	private Tire tire;
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getTopSpeed() {
+		return topSpeed;
+	}
+	public void setTopSpeed(int topSpeed) {
+		this.topSpeed = topSpeed;
+	}
+	public Tire getTire() {
+		return tire;
+	}
+	public void setTire(Tire tire) {
+		this.tire = tire;
+	}
+	
+	//default constructor methods
+	//public Car(){} //no parameters and no code
+	public Car(){
+		this.color="rust";
+		this.topSpeed =0;
+		this.tire = new Tire();//instance aggregate member
+	}
+	
+	//Constructor with arguments 
+	public Car(String color, int topSpeed, Tire tire){
+		this.color = color;
+		this.topSpeed = topSpeed;
+		this.tire = tire;
+	}
+	
+	public String motto(){
+		return "Motto from Car Superclass";
+	}
+	
+	public abstract String go(); //abstract method
+
+	
+	
+}//end class
+
+
+-------------------------------------------------------------------------
+
+public class MazdaRX7 extends Car{
+
+	@Override //implementation 
+	public String go() {
+		return "Go like an RX7";
+	}
+	
+	@Override //regular override
+	public String motto() {
+		return "Zoom Zoom!";
+	}
+	
+	public MazdaRX7(){
+		this.getTire().setBrand("Perelli");
+	}
+
+}//end class
+
+
+-------------------------------------------------------------------------
+
+
+public class FordFury extends Car {
+	
+	@Override //implementation 
+	public String go() {
+		return "Go like an Ford Fury";
+	}
+	
+	@Override //regular override
+	public String motto() {
+		return "Ford Fury!";
+	}
+
+}
+
+-------------------------------------------------------------------------
+
+
+public class Tire {
+	private String brand;
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public Tire(){
+		this.brand = "No Name Tires";
+	}//default constructor
+	
+	public Tire(String brand){
+		this.brand = brand;
+	}//constructor with args
+
+}//end class
+
+-------------------------------------------------------------------------
+
+-------------------------------------------------------------------------
+

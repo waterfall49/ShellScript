@@ -1,0 +1,751 @@
+Script started on 2019-01-23 22:00:00-0400
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls -la >>[K> [K[K listing.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ pwd >> listing.txt 
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat listing.txt 
+total 256
+drwxr-xr-x 18 osys1000 osys1000  4096 Jan 23 22:00 .
+drwxr-xr-x  3 root     root      4096 Jan  7 09:59 ..
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 22:00 assign2_Cathy.txt
+-rw-------  1 osys1000 osys1000  8874 Jan 23 17:20 .bash_history
+-rw-r--r--  1 osys1000 osys1000   220 Jan  7 09:59 .bash_logout
+-rw-r--r--  1 osys1000 osys1000  3771 Jan  7 09:59 .bashrc
+drwx------ 16 osys1000 osys1000  4096 Jan 14 09:52 .cache
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 11:40 cathy.txt
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 11:40 Cathy.txt
+drwxrwxr-x  6 osys1000 osys1000  4096 Jan 14 09:46 .cinnamon
+drwxr-xr-x 17 osys1000 osys1000  4096 Jan 14 09:42 .config
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 09:18 Desktop
+-rw-r--r--  1 osys1000 osys1000    27 Jan  7 10:06 .dmrc
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 23 11:29 Documents
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Downloads
+drwx------  2 osys1000 osys1000  4096 Jan  7 10:06 .gconf
+drwxr-xr-x 24 osys1000 osys1000  4096 Jan 14 10:09 .gimp-2.8
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .gnupg
+-rw-r--r--  1 osys1000 osys1000    22 Jan  7 09:59 .gtkrc-2.0
+-rw-r--r--  1 osys1000 osys1000   516 Jan  7 09:59 .gtkrc-xfce
+-rw-------  1 osys1000 osys1000  4536 Jan 23 21:57 .ICEauthority
+-rw-r--r--  1 osys1000 osys1000   470 Jan 23 16:54 libfiles.txt
+-rw-r--r--  1 osys1000 osys1000     0 Jan 23 22:00 listing.txt
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .local
+drwx------  5 osys1000 osys1000  4096 Jan  7 10:06 .mozilla
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Music
+-rw-r--r--  1 osys1000 osys1000 12288 Jan 23 11:27 .output_file.txt.swp
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 09:53 Pictures
+-rw-r--r--  1 osys1000 osys1000   807 Jan  7 09:59 .profile
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Public
+-rw-r--r--  1 osys1000 osys1000     0 Jan  7 21:52 .sudo_as_admin_successful
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Templates
+-rw-r--r--  1 osys1000 osys1000 52142 Jan 23 14:25 test_assign2_Cathy.txt
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Videos
+-rw-------  1 osys1000 osys1000    66 Jan 23 21:57 .Xauthority
+-rw-------  1 osys1000 osys1000  7051 Jan 23 21:57 .xsession-errors
+-rw-------  1 osys1000 osys1000 10910 Jan 23 17:20 .xsession-errors.old
+-rw-r--r--  1 osys1000 osys1000 42646 Jan 21 09:47 .zcompdump
+/home/osys1000
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /usr/lib -name "lib" >> libfiles.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat libfiles.txt 
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat libfiles.txt find /usr/lib -name "lib" >> libfiles.txt[1P[C[1P libfiles.txt[1@ 
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat libfiles.txt 
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls | sort -f -r[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktouch cathy.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cou[K[K[Ktouch Cathy.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls
+assign2_Cathy.txt  [0m[01;34mDesktop[0m    libfiles.txt  [01;34mPictures[0m   test_assign2_Cathy.txt
+cathy.txt          [01;34mDocuments[0m  listing.txt   [01;34mPublic[0m     [01;34mVideos[0m
+Cathy.txt          [01;34mDownloads[0m  [01;34mMusic[0m         [01;34mTemplates[0m
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls }[K| sort -f -r
+Videos
+test_assign2_Cathy.txt
+Templates
+Public
+Pictures
+Music
+listing.txt
+libfiles.txt
+Downloads
+Documents
+Desktop
+Cathy.txt
+cathy.txt
+assign2_Cathy.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ls -a | find -type f | grep -i "cah[Kthy"
+./Documents/[01;31m[KCathy[m[K_exercise3_again.txt
+./Documents/[01;31m[KCathy[m[K_script.txt
+./Documents/[01;31m[KCathy[m[K_exercise4.txt
+./Documents/[01;31m[KCathy[m[K_exercise3.txt
+./Documents/new_[01;31m[KCathy[m[K_script.txt
+./Documents/new_[01;31m[KCathy[m[K_file.txt
+./Documents/[01;31m[KCathy[m[K_exercise2.txt
+./assign2_[01;31m[KCathy[m[K.txt
+./test_assign2_[01;31m[KCathy[m[K.txt
+./[01;31m[Kcathy[m[K.txt
+./[01;31m[KCathy[m[K.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cd /dev
+]0;osys1000@Cathy-virtual-machine: /dev[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m/dev[00m$ lsv-[K[K -la | grep vcs
+crw-rw----   1 root tty       7,   0 Jan 23 21:57 [01;31m[Kvcs[m[K
+crw-rw----   1 root tty       7,   1 Jan 23 21:57 [01;31m[Kvcs[m[K1
+crw-rw----   1 root tty       7,   2 Jan 23 21:57 [01;31m[Kvcs[m[K2
+crw-rw----   1 root tty       7,   3 Jan 23 21:57 [01;31m[Kvcs[m[K3
+crw-rw----   1 root tty       7,   4 Jan 23 21:57 [01;31m[Kvcs[m[K4
+crw-rw----   1 root tty       7,   5 Jan 23 21:57 [01;31m[Kvcs[m[K5
+crw-rw----   1 root tty       7,   6 Jan 23 21:57 [01;31m[Kvcs[m[K6
+crw-rw----   1 root tty       7,   7 Jan 23 21:57 [01;31m[Kvcs[m[K7
+crw-rw----   1 root tty       7, 128 Jan 23 21:57 [01;31m[Kvcs[m[Ka
+crw-rw----   1 root tty       7, 129 Jan 23 21:57 [01;31m[Kvcs[m[Ka1
+crw-rw----   1 root tty       7, 130 Jan 23 21:57 [01;31m[Kvcs[m[Ka2
+crw-rw----   1 root tty       7, 131 Jan 23 21:57 [01;31m[Kvcs[m[Ka3
+crw-rw----   1 root tty       7, 132 Jan 23 21:57 [01;31m[Kvcs[m[Ka4
+crw-rw----   1 root tty       7, 133 Jan 23 21:57 [01;31m[Kvcs[m[Ka5
+crw-rw----   1 root tty       7, 134 Jan 23 21:57 [01;31m[Kvcs[m[Ka6
+crw-rw----   1 root tty       7, 135 Jan 23 21:57 [01;31m[Kvcs[m[Ka7
+]0;osys1000@Cathy-virtual-machine: /dev[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m/dev[00m$ vi colour.[Ks.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "/var/tmp/colours.txt.swp"
+[10Cowned by: osys1000   dated: Wed Jan 23 17:18:24 2019
+[9Cfile name: /dev/colours.txt
+[10Cmodified: YES
+[9Cuser name: osys1000   host name: Cathy-virtual-machine
+[8Cprocess ID: 1918
+While opening file "colours.txt"
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r colours.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/var/tmp/colours.txt.swp"
+    to avoid this message.
+
+"colours.txt" [New File]
+[32mPress ENTER or type command to continue[?25h[m[1;1H[19L[?25l[2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;1H[K[1;1H[?25h[?25l[24;1H:[?2004h[?25hq[?25l[?2004l[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;osys1000@Cathy-virtual-machine: /dev[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m/dev[00m$ exit[K[K[K[Kcd ~
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ vi colours.txt
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[24;1H"colours.txt" [New File][2;1H[94m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[?25h[?2004l[?25l[mr[?25h[?25le[?25h[?25ld[?25h[?25l[2;1H[K[2;1H[?25h[?25lb[?25h[?25ll[?25h[?25lu[?25h[?25le[?25h[?25l[3;1H[K[3;1H[?25h[?25lg[?25h[?25lr[?25h[?25le[?25h[?25le[?25h[?25ln[?25h[?25l[4;1H[K[4;1H[?25h[?25ly[?25h[?25le[?25h[?25ll[?25h[?25lo[?25h[?25lo[?25h[?25lw[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25ll[?25h[?2004h[?25l[4;5H[K[4;4H[?25h[?2004l[?25l[4;23r[4;1H[L[1;24r[4;1HC[24;1H[K[4;2H[?25h[?2004h[?2004l[?25l[4;23r[4;1H[L[1;24r[4;1HC[?25h[?2004h[?2004l[?25l[4;23r[4;1H[L[1;24r[4;1HD[?25h[?2004h[?25ld[?25h[?25l[4;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[myel[?2004l[?25l[5;1H[K[5;1H[?25h[?2004h[?2004l[?25l[5;23r[5;1H[L[1;24r[5;1HD[?25h[?2004h[?2004l[?25l[5;23r[5;1H[L[1;24r[5;1HD[?25h[?25ld[?25h[?25ld[?25h[?2004h[?25lD[?25h[?25l[5;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [5;1H[?25h[?25l[5;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [5;1H[?25h[4;1H[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?2004l[?25l[my[?25h[?25lw[?25h[?2004h[?2004l[?25l[4;23r[4;1H[L[1;24r[4;1HD[?25h[?2004h[?2004l[?25l[4;23r[4;1H[L[1;24r[4;1HD[?25h[?2004h[?25ld[?25h[?25l[4;23r[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l[4;23r[m[23;1H
+[1;24r[23;1H[94m~                                                                               [4;1H[?25h[?25l~                                                                               [3;1H[?25h[?2004l[?25l[mggreeng[?25h[?2004h[?25lG[?25h[?25l[3;2H[K[3;1H[?25h[?25l[3;1H[K[3;1H[?25h[?2004l[?25lg[?25h[?25lr[?25h[?25le[?25h[?25le[?25h[?25ln[?25h[?25l[4;1H[K[4;1H[?25h[?25ly[?25h[?25le[?25h[?25ll[?25h[?25ll[?25h[?25lo[?25h[?25lw[?25h[?25l[5;1H[K[5;1H[?25h[?25lg[?25h[?25lr[?25h[?25le[?25h[?25le[?25h[?25ln[?25h[?2004h[?25lN[?25h[?25l[24;1H:[?2004h[?25hwq[?25l[?2004l"colours.txt" [New File] 5 lines, 28 characters written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat colours.txt 
+red
+blue
+green
+yellow
+greeN
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat colours.txt [K[Kt[Kt | tr "N" "n"[K[K[K[K[K[K[K'N' 'n'
+red
+blue
+green
+yellow
+green
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat colours.txt | tr 'N' 'n'[K[K[K[K[K[K[K[K[K[Ksort | uniq | tee sortedColo urs.txt
+blue
+green
+greeN
+red
+yellow
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat colours.txt | sort | uniq | tee sortedColours.txttr 'N' 'n'[K[K
+red
+blue
+green
+yellow
+greeN
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat colours.txt | sort | uniq | tee sortedColours.txt
+blue
+green
+red
+yellow
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat /var/log/syslog | egrep -idhc[K[K[K dhc | more
+Jan 23 08:26:37 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 08:26:37 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9949] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9949] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9949] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9950] dhcp4 (ens33):
+   lease time 1800
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9950] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9950] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9950] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 08:26:37 Cathy-virtual-machine NetworkManager[797]: <info>  [1548246397.9950] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 08:26:38 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 788 seco
+nds.
+Jan 23 08:26:38 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+[7m--More--[27mJan 23 08:26:38 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+[7m--More--[27mdered scripts...
+[7m--More--[27mJan 23 08:39:46 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+[7m--More--[27m168.94.254 port 67 (xid=0x1d00e362)
+[7m--More--[27mJan 23 08:39:46 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+[7m--More--[27mJan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0501] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   lease time 1800
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 08:39:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548247186.0502] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 08:39:46 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 863 seco
+nds.
+Jan 23 08:39:46 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 08:39:46 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 08:54:09 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+[7m--More--[27m168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 08:54:09 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5237] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   lease time 1800
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5238] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 08:54:09 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248049.5239] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 08:54:09 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 753 seco
+nds.
+Jan 23 08:54:09 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 08:54:09 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+[7m--More--[27mdered scripts...
+Jan 23 09:06:42 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 09:06:42 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3193] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3193] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3193] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3193] dhcp4 (ens33):
+   lease time 1800
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3194] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3194] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3194] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 09:06:42 Cathy-virtual-machine NetworkManager[797]: <info>  [1548248802.3194] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 09:06:42 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 724 seco
+nds.
+Jan 23 09:06:42 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+[7m--More--[27mcripts)[K
+Jan 23 09:06:42 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 09:18:46 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 09:18:46 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8296] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   lease time 1800
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 09:18:46 Cathy-virtual-machine NetworkManager[797]: <info>  [1548249526.8297] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 09:18:46 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 888 seco
+[7m--More--[27mnds.[K
+Jan 23 09:18:46 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 09:18:46 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 09:33:34 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 09:33:34 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8788] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8788] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+   lease time 1800
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 09:33:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548250414.8789] dhcp4 (ens33):
+[7m--More--[27m state changed bound -> bound
+Jan 23 09:33:34 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 745 seco
+nds.
+Jan 23 09:33:34 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 09:33:34 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 09:45:59 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 09:45:59 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8112] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8113] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8113] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8114] dhcp4 (ens33):
+   lease time 1800
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8114] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8115] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8115] dhcp4 (ens33):
+[7m--More--[27m   wins '192.168.94.2'
+Jan 23 09:45:59 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251159.8115] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 09:45:59 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 836 seco
+nds.
+Jan 23 09:45:59 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 09:45:59 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 09:59:56 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 09:59:56 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0174] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0174] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0174] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0175] dhcp4 (ens33):
+   lease time 1800
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0175] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0175] dhcp4 (ens33):
+[7m--More--[27m   domain name 'localdomain'
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0175] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 09:59:56 Cathy-virtual-machine NetworkManager[797]: <info>  [1548251996.0175] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 09:59:56 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 741 seco
+nds.
+Jan 23 09:59:56 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 09:59:56 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 10:12:17 Cathy-virtual-machine dhclient[949]: DHCPREQUEST of 192.168.94.129 on ens33 to 192.
+168.94.254 port 67 (xid=0x1d00e362)
+Jan 23 10:12:17 Cathy-virtual-machine dhclient[949]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   lease time 1800
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+[7m--More--[27m   nameserver '192.168.94.2'
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 10:12:17 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252737.5503] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 10:12:17 Cathy-virtual-machine dhclient[949]: bound to 192.168.94.129 -- renewal in 703 seco
+nds.
+Jan 23 10:12:17 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 10:12:17 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.3505] device (ens33)
+: DHCPv4 lease renewal requested
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.3711] dhcp4 (ens33):
+ canceled DHCP transaction, DHCP client pid 949
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.3714] dhcp4 (ens33):
+ state changed bound -> done
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.3725] dhcp4 (ens33):
+ activation: beginning transaction (timeout in 45 seconds)
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.3779] dhcp4 (ens33):
+ dhclient started with pid 2764
+[7m--More--[27mJan 23 10:16:32 Cathy-virtual-machine dhclient[2764]: DHCPREQUEST of 192.168.94.129 on ens33 to 255
+.255.255.255 port 67 (xid=0x2515cc76)
+Jan 23 10:16:32 Cathy-virtual-machine dhclient[2764]: DHCPACK of 192.168.94.129 from 192.168.94.254
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4284] dhcp4 (ens33):
+   address 192.168.94.129
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4286] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4286] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4287] dhcp4 (ens33):
+   lease time 1800
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4287] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4287] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4288] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 10:16:32 Cathy-virtual-machine NetworkManager[797]: <info>  [1548252992.4288] dhcp4 (ens33):
+ state changed unknown -> bound
+Jan 23 10:16:32 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 10:16:32 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+[7m--More--[27mJan 23 10:16:32 Cathy-virtual-machine dhclient[2764]: bound to 192.168.94.129 -- renewal in 873 sec
+onds.
+Jan 23 10:49:53 Cathy-virtual-machine NetworkManager[797]: <info>  [1548254993.9902] dhcp4 (ens33):
+ state changed bound -> expire
+Jan 23 10:49:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548254994.0274] dhcp4 (ens33):
+ canceled DHCP transaction, DHCP client pid 2764
+Jan 23 10:49:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548254994.0276] dhcp4 (ens33):
+ state changed expire -> done
+Jan 23 10:49:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548254994.0292] device (ens33)
+: scheduling DHCPv4 restart in 120 seconds, 3 tries left (reason: lease expired)
+Jan 23 10:51:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255114.0187] dhcp4 (ens33):
+ activation: beginning transaction (timeout in 45 seconds)
+Jan 23 10:51:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255114.0239] dhcp4 (ens33):
+ dhclient started with pid 2881
+Jan 23 10:51:54 Cathy-virtual-machine dhclient[2881]: DHCPDISCOVER on ens33 to 255.255.255.255 port
+ 67 interval 3 (xid=0x8866fd59)
+Jan 23 10:51:57 Cathy-virtual-machine dhclient[2881]: DHCPDISCOVER on ens33 to 255.255.255.255 port
+ 67 interval 8 (xid=0x8866fd59)
+Jan 23 10:51:58 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 255
+.255.255.255 port 67 (xid=0x59fd6688)
+Jan 23 10:51:58 Cathy-virtual-machine dhclient[2881]: DHCPOFFER of 192.168.94.130 from 192.168.94.2
+54
+Jan 23 10:51:58 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+[7m--More--[27mJan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7895] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7895] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7896] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7896] dhcp4 (ens33):
+   lease time 1800
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7896] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7896] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7897] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 10:51:58 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255118.7897] dhcp4 (ens33):
+ state changed unknown -> bound
+Jan 23 10:51:58 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 680 sec
+onds.
+Jan 23 10:51:58 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 10:51:58 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 11:03:18 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+[7m--More--[27m.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 11:03:18 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8747] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8748] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8748] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8748] dhcp4 (ens33):
+   lease time 1800
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8749] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8749] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8749] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 11:03:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548255798.8749] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 11:03:18 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 869 sec
+onds.
+Jan 23 11:03:18 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 11:03:18 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+[7m--More--[27mdered scripts...
+Jan 23 11:17:47 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 11:17:47 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1535] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1536] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1537] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1537] dhcp4 (ens33):
+   lease time 1800
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1538] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1538] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1538] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 11:17:47 Cathy-virtual-machine NetworkManager[797]: <info>  [1548256667.1538] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 11:17:47 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 757 sec
+onds.
+Jan 23 11:17:47 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+[7m--More--[27mcripts)[K
+Jan 23 11:17:47 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 11:30:25 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 11:30:25 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1080] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1081] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1081] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1082] dhcp4 (ens33):
+   lease time 1800
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1082] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1082] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1082] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 11:30:25 Cathy-virtual-machine NetworkManager[797]: <info>  [1548257425.1082] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 11:30:25 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 725 sec
+[7m--More--[27monds.[K
+Jan 23 11:30:25 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 11:30:25 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 11:42:30 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 11:42:30 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8230] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8234] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8235] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8237] dhcp4 (ens33):
+   lease time 1800
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8238] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8238] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8239] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 11:42:30 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258150.8239] dhcp4 (ens33):
+[7m--More--[27m state changed bound -> bound
+Jan 23 11:42:30 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 844 sec
+onds.
+Jan 23 11:42:30 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 11:42:30 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 11:56:34 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 11:56:34 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0667] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0668] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0668] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0669] dhcp4 (ens33):
+   lease time 1800
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0669] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0669] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0669] dhcp4 (ens33):
+[7m--More--[27m   wins '192.168.94.2'
+Jan 23 11:56:34 Cathy-virtual-machine NetworkManager[797]: <info>  [1548258994.0669] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 11:56:34 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 753 sec
+onds.
+Jan 23 11:56:34 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 11:56:34 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 12:09:07 Cathy-virtual-machine dhclient[2881]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x59fd6688)
+Jan 23 12:09:07 Cathy-virtual-machine dhclient[2881]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7617] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7618] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7618] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7619] dhcp4 (ens33):
+   lease time 1800
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7619] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7619] dhcp4 (ens33):
+[7m--More--[27m   domain name 'localdomain'
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7620] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 12:09:07 Cathy-virtual-machine NetworkManager[797]: <info>  [1548259747.7620] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 12:09:07 Cathy-virtual-machine dhclient[2881]: bound to 192.168.94.130 -- renewal in 724 sec
+onds.
+Jan 23 12:09:07 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 12:09:07 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6276] device (ens33)
+: DHCPv4 lease renewal requested
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6484] dhcp4 (ens33):
+ canceled DHCP transaction, DHCP client pid 2881
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6484] dhcp4 (ens33):
+ state changed bound -> done
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6489] dhcp4 (ens33):
+ activation: beginning transaction (timeout in 45 seconds)
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6515] dhcp4 (ens33):
+ dhclient started with pid 3382
+Jan 23 12:14:18 Cathy-virtual-machine dhclient[3382]: DHCPREQUEST of 192.168.94.130 on ens33 to 255
+.255.255.255 port 67 (xid=0x9e70d60)
+[7m--More--[27mJan 23 12:14:18 Cathy-virtual-machine dhclient[3382]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6878] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6879] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6879] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6879] dhcp4 (ens33):
+   lease time 1800
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6880] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6880] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6880] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 12:14:18 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260058.6880] dhcp4 (ens33):
+ state changed unknown -> bound
+Jan 23 12:14:18 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 12:14:18 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 12:14:18 Cathy-virtual-machine dhclient[3382]: bound to 192.168.94.130 -- renewal in 687 sec
+onds.
+[7m--More--[27mJan 23 12:25:45 Cathy-virtual-machine dhclient[3382]: DHCPREQUEST of 192.168.94.130 on ens33 to 192
+.168.94.254 port 67 (xid=0x9e70d60)
+Jan 23 12:25:45 Cathy-virtual-machine dhclient[3382]: DHCPACK of 192.168.94.130 from 192.168.94.254
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4960] dhcp4 (ens33):
+   address 192.168.94.130
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4960] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4960] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4960] dhcp4 (ens33):
+   lease time 1800
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4961] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4961] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4961] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 12:25:45 Cathy-virtual-machine NetworkManager[797]: <info>  [1548260745.4961] dhcp4 (ens33):
+ state changed bound -> bound
+Jan 23 12:25:45 Cathy-virtual-machine nm-dispatcher: req:2 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 12:25:45 Cathy-virtual-machine nm-dispatcher: req:2 'dhcp4-change' [ens33]: start running or
+dered scripts...
+[7m--More--[27mJan 23 12:25:45 Cathy-virtual-machine dhclient[3382]: bound to 192.168.94.130 -- renewal in 716 sec
+onds.
+Jan 23 13:52:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548265970.3555] dhcp4 (ens33):
+ state changed bound -> expire
+Jan 23 13:52:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548265970.3931] dhcp4 (ens33):
+ canceled DHCP transaction, DHCP client pid 3382
+Jan 23 13:52:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548265970.3933] dhcp4 (ens33):
+ state changed expire -> done
+Jan 23 13:52:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548265970.3937] device (ens33)
+: scheduling DHCPv4 restart in 120 seconds, 3 tries left (reason: lease expired)
+Jan 23 13:54:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266090.9626] dhcp4 (ens33):
+ activation: beginning transaction (timeout in 45 seconds)
+Jan 23 13:54:50 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266090.9642] dhcp4 (ens33):
+ dhclient started with pid 3518
+Jan 23 13:54:50 Cathy-virtual-machine dhclient[3518]: DHCPDISCOVER on ens33 to 255.255.255.255 port
+ 67 interval 3 (xid=0x8813308)
+Jan 23 13:54:53 Cathy-virtual-machine dhclient[3518]: DHCPDISCOVER on ens33 to 255.255.255.255 port
+ 67 interval 7 (xid=0x8813308)
+Jan 23 13:54:54 Cathy-virtual-machine dhclient[3518]: DHCPREQUEST of 192.168.94.131 on ens33 to 255
+.255.255.255 port 67 (xid=0x8338108)
+Jan 23 13:54:54 Cathy-virtual-machine dhclient[3518]: DHCPOFFER of 192.168.94.131 from 192.168.94.2
+54
+Jan 23 13:54:54 Cathy-virtual-machine dhclient[3518]: DHCPACK of 192.168.94.131 from 192.168.94.254
+[7m--More--[27mJan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0463] dhcp4 (ens33):
+   address 192.168.94.131
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   plen 24 (255.255.255.0)
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   gateway 192.168.94.2
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   lease time 1800
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   nameserver '192.168.94.2'
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   domain name 'localdomain'
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+   wins '192.168.94.2'
+Jan 23 13:54:54 Cathy-virtual-machine NetworkManager[797]: <info>  [1548266094.0464] dhcp4 (ens33):
+ state changed unknown -> bound
+Jan 23 13:54:54 Cathy-virtual-machine dhclient[3518]: bound to 192.168.94.131 -- renewal in 824 sec
+onds.
+Jan 23 13:54:54 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 s
+cripts)
+Jan 23 13:54:54 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running or
+dered scripts...
+Jan 23 14:08:38 Cathy-virtual-machine dhclient[3518]: DHCPREQUEST of 192.168.94.131 on ens33 to 192
+[7m--More--[27m[K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ find /bin -size +64k | grep sh | wc -l
+3
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-01-23 22:56:24-0400

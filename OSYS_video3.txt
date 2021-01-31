@@ -1,0 +1,716 @@
+osys1000@Cathy-virtual-machine:~$ wc
+pwd
+cd
+whoami
+^C
+osys1000@Cathy-virtual-machine:~$ wc
+hello
+get
+me
+out
+of
+here
+      6       6      25
+osys1000@Cathy-virtual-machine:~$ wc
+the cat in the hat 
+ate a rat
+how about that
+      3      11      44
+osys1000@Cathy-virtual-machine:~$ 
+
+------------------------------------------------
+
+osys1000@Cathy-virtual-machine:~$ ls /var/log
+alternatives.log       syslog
+apt                    syslog.1
+auth.log               syslog.2.gz
+auth.log.1             syslog.3.gz
+auth.log.2.gz          syslog.4.gz
+boot.log               tallylog
+bootstrap.log          ubuntu-system-adjustments-adjust-grub-title.log
+btmp                   ubuntu-system-adjustments-start.log
+cups                   ubuntu-system-adjustments-stop.log
+dpkg.log               vmware-network.1.log
+faillog                vmware-network.2.log
+fontconfig.log         vmware-network.3.log
+gpu-manager.log        vmware-network.4.log
+hp                     vmware-network.5.log
+installer              vmware-network.6.log
+journal                vmware-network.7.log
+kern.log               vmware-network.8.log
+kern.log.1             vmware-network.log
+kern.log.2.gz          vmware-vmsvc.1.log
+lastlog                vmware-vmsvc.2.log
+lightdm                vmware-vmsvc.3.log
+mintsystem.log         vmware-vmsvc.log
+mintsystem.timestamps  wtmp
+openvpn                Xorg.0.log
+samba                  Xorg.0.log.old
+speech-dispatcher
+osys1000@Cathy-virtual-machine:~$ ls-la
+ls-la: command not found
+osys1000@Cathy-virtual-machine:~$ ls -la
+total 180
+drwxr-xr-x 18 osys1000 osys1000  4096 Jan 21 17:38 .
+drwxr-xr-x  3 root     root      4096 Jan  7 09:59 ..
+-rw-------  1 osys1000 osys1000  2122 Jan 21 10:06 .bash_history
+-rw-r--r--  1 osys1000 osys1000   220 Jan  7 09:59 .bash_logout
+-rw-r--r--  1 osys1000 osys1000  3771 Jan  7 09:59 .bashrc
+drwx------ 16 osys1000 osys1000  4096 Jan 14 09:52 .cache
+drwxrwxr-x  6 osys1000 osys1000  4096 Jan 14 09:46 .cinnamon
+drwxr-xr-x 17 osys1000 osys1000  4096 Jan 14 09:42 .config
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 09:18 Desktop
+-rw-r--r--  1 osys1000 osys1000    27 Jan  7 10:06 .dmrc
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 21 10:07 Documents
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Downloads
+drwx------  2 osys1000 osys1000  4096 Jan  7 10:06 .gconf
+drwxr-xr-x 24 osys1000 osys1000  4096 Jan 14 10:09 .gimp-2.8
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .gnupg
+-rw-r--r--  1 osys1000 osys1000    22 Jan  7 09:59 .gtkrc-2.0
+-rw-r--r--  1 osys1000 osys1000   516 Jan  7 09:59 .gtkrc-xfce
+-rw-------  1 osys1000 osys1000  3402 Jan 21 17:38 .ICEauthority
+drwx------  3 osys1000 osys1000  4096 Jan  7 10:06 .local
+drwx------  5 osys1000 osys1000  4096 Jan  7 10:06 .mozilla
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Music
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan 14 09:53 Pictures
+-rw-r--r--  1 osys1000 osys1000   807 Jan  7 09:59 .profile
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Public
+-rw-r--r--  1 osys1000 osys1000     0 Jan  7 21:52 .sudo_as_admin_successful
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Templates
+drwxr-xr-x  2 osys1000 osys1000  4096 Jan  7 10:06 Videos
+-rw-------  1 osys1000 osys1000    66 Jan 21 17:38 .Xauthority
+-rw-------  1 osys1000 osys1000  8772 Jan 21 17:43 .xsession-errors
+-rw-------  1 osys1000 osys1000 15169 Jan 21 10:08 .xsession-errors.old
+-rw-r--r--  1 osys1000 osys1000 42646 Jan 21 09:47 .zcompdump
+osys1000@Cathy-virtual-machine:~$ ls -la /var/log
+total 3872
+drwxrwxr-x  11 root              syslog             4096 Jan 21 17:38 .
+drwxr-xr-x  12 root              root               4096 Jul 17  2018 ..
+-rw-r--r--   1 root              root              35709 Jan  7 22:13 alternatives.log
+drwxr-xr-x   2 root              root               4096 Jan 21 09:20 apt
+-rw-r-----   1 syslog            adm                8313 Jan 21 17:38 auth.log
+-rw-r-----   1 syslog            adm               13383 Jan 21 08:30 auth.log.1
+-rw-r-----   1 syslog            adm                2557 Jan 16 08:51 auth.log.2.gz
+-rw-------   1 root              root                715 Jan 21 17:38 boot.log
+-rw-r--r--   1 root              root              62291 Jul 17  2018 bootstrap.log
+-rw-rw----   1 root              utmp               1152 Jan 21 08:29 btmp
+drwxr-xr-x   2 root              root               4096 Jan 21 08:33 cups
+-rw-r--r--   1 root              root            1747554 Jan 21 09:20 dpkg.log
+-rw-r--r--   1 root              root              32032 Jan  7 22:10 faillog
+-rw-r--r--   1 root              root               6058 Jan  7 22:12 fontconfig.log
+-rw-r--r--   1 root              root               1165 Jan 21 17:38 gpu-manager.log
+drwxr-xr-x   3 root              root               4096 Jul 17  2018 hp
+drwxr-xr-x   2 root              root               4096 Jan  7 10:03 installer
+drwxr-sr-x+  3 root              systemd-journal    4096 Jan  7 10:05 journal
+-rw-r-----   1 syslog            adm              182701 Jan 21 17:38 kern.log
+-rw-r-----   1 syslog            adm              550459 Jan 21 08:29 kern.log.1
+-rw-r-----   1 syslog            adm              158869 Jan 16 08:51 kern.log.2.gz
+-rw-rw-r--   1 root              utmp             292292 Jan  7 22:10 lastlog
+drwxr-xr-x   2 root              root               4096 Jan 21 08:33 lightdm
+-rw-r--r--   1 root              root               2368 Jan 21 17:38 mintsystem.log
+-rw-r--r--   1 root              root                546 Jan  7 22:10 mintsystem.timestamps
+drwxr-xr-x   2 root              root               4096 Feb 10  2018 openvpn
+drwxr-x---   2 root              adm                4096 Apr 18  2018 samba
+drwx------   2 speech-dispatcher root               4096 Apr 23  2018 speech-dispatcher
+-rw-r-----   1 syslog            adm              282034 Jan 21 17:39 syslog
+-rw-r-----   1 syslog            adm              275277 Jan 21 08:33 syslog.1
+-rw-r-----   1 syslog            adm               71589 Jan 19 15:21 syslog.2.gz
+-rw-r-----   1 syslog            adm               37968 Jan 16 08:55 syslog.3.gz
+-rw-r-----   1 syslog            adm              208775 Jan 14 08:46 syslog.4.gz
+-rw-------   1 root              root              64064 Jan  7 22:10 tallylog
+-rw-r--r--   1 root              root                109 Jan 21 17:38 ubuntu-system-adjustments-adjust-grub-title.log
+-rw-r--r--   1 root              root                 26 Jan 21 17:38 ubuntu-system-adjustments-start.log
+-rw-r--r--   1 root              root                 26 Jan 21 10:08 ubuntu-system-adjustments-stop.log
+-rw-------   1 root              root                685 Jan 21 08:28 vmware-network.1.log
+-rw-------   1 root              root                685 Jan 19 15:16 vmware-network.2.log
+-rw-------   1 root              root               1050 Jan 19 14:02 vmware-network.3.log
+-rw-------   1 root              root               1322 Jan 19 14:02 vmware-network.4.log
+-rw-------   1 root              root                685 Jan 19 13:52 vmware-network.5.log
+-rw-------   1 root              root                685 Jan 16 08:50 vmware-network.6.log
+-rw-------   1 root              root               3288 Jan 14 08:41 vmware-network.7.log
+-rw-------   1 root              root                681 Jan  7 22:23 vmware-network.8.log
+-rw-------   1 root              root                685 Jan 21 17:38 vmware-network.log
+-rw-r--r--   1 root              root               2471 Jan 21 10:08 vmware-vmsvc.1.log
+-rw-r--r--   1 root              root               2471 Jan 19 17:19 vmware-vmsvc.2.log
+-rw-r--r--   1 root              root               3040 Jan 19 14:02 vmware-vmsvc.3.log
+-rw-r--r--   1 root              root               1759 Jan 21 17:38 vmware-vmsvc.log
+-rw-rw-r--   1 root              utmp              32640 Jan 21 17:38 wtmp
+-rw-r--r--   1 root              root              20875 Jan 21 17:43 Xorg.0.log
+-rw-r--r--   1 root              root              22041 Jan 21 10:08 Xorg.0.log.old
+osys1000@Cathy-virtual-machine:~$ wc < /var/log/syslog
+  2420  32555 282034
+osys1000@Cathy-virtual-machine:~$ wc -l < /var/log/syslog
+2420
+osys1000@Cathy-virtual-machine:~$ 
+osys1000@Cathy-virtual-machine:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+osys1000@Cathy-virtual-machine:~$ ls > output_file.txt
+osys1000@Cathy-virtual-machine:~$ ls
+Desktop    Downloads  output_file.txt  Public     Videos
+Documents  Music      Pictures         Templates
+osys1000@Cathy-virtual-machine:~$ cat output_file.txt 
+Desktop
+Documents
+Downloads
+Music
+output_file.txt
+Pictures
+Public
+Templates
+Videos
+osys1000@Cathy-virtual-machine:~$ pwd > output_file.txt 
+osys1000@Cathy-virtual-machine:~$ cat output_file.txt 
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ whoami >> output_file.txt 
+osys1000@Cathy-virtual-machine:~$ cat output_file.txt 
+/home/osys1000
+osys1000
+osys1000@Cathy-virtual-machine:~$ 
+osys1000@Cathy-virtual-machine:~$ ls
+Desktop    Downloads  output_file.txt  Public     Videos
+Documents  Music      Pictures         Templates
+osys1000@Cathy-virtual-machine:~$ ls x*
+ls: cannot access 'x*': No such file or directory
+osys1000@Cathy-virtual-machine:~$ ls x* >> output_file.txt 
+ls: cannot access 'x*': No such file or directory
+osys1000@Cathy-virtual-machine:~$ cat output_file.txt 
+/home/osys1000
+osys1000
+osys1000@Cathy-virtual-machine:~$ ls x* >> error_file.txt 
+ls: cannot access 'x*': No such file or directory
+osys1000@Cathy-virtual-machine:~$ ls x* 2>> error_file.txt 
+osys1000@Cathy-virtual-machine:~$ cat error_file.txt 
+ls: cannot access 'x*': No such file or directory
+osys1000@Cathy-virtual-machine:~$ 
+
+--------------------- pipe -----------------------------------
+osys1000@Cathy-virtual-machine:~$ ls | wc
+     10      10      98
+osys1000@Cathy-virtual-machine:~$ ls -a | wc
+     33      33     342
+osys1000@Cathy-virtual-machine:~$ ls -a
+.              .dmrc           .ICEauthority              Templates
+..             Documents       .local                     Videos
+.bash_history  Downloads       .mozilla                   .Xauthority
+.bash_logout   error_file.txt  Music                      .xsession-errors
+.bashrc        .gconf          output_file.txt            .xsession-errors.old
+.cache         .gimp-2.8       Pictures                   .zcompdump
+.cinnamon      .gnupg          .profile
+.config        .gtkrc-2.0      Public
+Desktop        .gtkrc-xfce     .sudo_as_admin_successful
+osys1000@Cathy-virtual-machine:~$ ls -a | wc -l
+33
+osys1000@Cathy-virtual-machine:~$ ls -a | wc -l >> count_file.txt
+osys1000@Cathy-virtual-machine:~$ cat count_file.txt 
+34
+osys1000@Cathy-virtual-machine:~$ ls
+count_file.txt  Documents  error_file.txt  output_file.txt  Public     Videos
+Desktop         Downloads  Music           Pictures         Templates
+osys1000@Cathy-virtual-machine:~$ 
+
+---------------- ps, grep ----------------------
+
+osys1000@Cathy-virtual-machine:~$ ps
+   PID TTY          TIME CMD
+  1590 pts/0    00:00:00 bash
+  1762 pts/0    00:00:00 ps
+osys1000@Cathy-virtual-machine:~$ whatis ps
+ps (1)               - report a snapshot of the current processes.
+osys1000@Cathy-virtual-machine:~$ ps -ef
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 17:38 ?        00:00:02 /sbin/init splash
+root          2      0  0 17:38 ?        00:00:00 [kthreadd]
+root          4      2  0 17:38 ?        00:00:00 [kworker/0:0H]
+root          6      2  0 17:38 ?        00:00:00 [mm_percpu_wq]
+root          7      2  0 17:38 ?        00:00:00 [ksoftirqd/0]
+root          8      2  0 17:38 ?        00:00:00 [rcu_sched]
+root          9      2  0 17:38 ?        00:00:00 [rcu_bh]
+root         10      2  0 17:38 ?        00:00:00 [migration/0]
+root         11      2  0 17:38 ?        00:00:00 [watchdog/0]
+root         12      2  0 17:38 ?        00:00:00 [cpuhp/0]
+root         13      2  0 17:38 ?        00:00:00 [cpuhp/1]
+root         14      2  0 17:38 ?        00:00:00 [watchdog/1]
+root         15      2  0 17:38 ?        00:00:00 [migration/1]
+root         16      2  0 17:38 ?        00:00:00 [ksoftirqd/1]
+root         18      2  0 17:38 ?        00:00:00 [kworker/1:0H]
+root         19      2  0 17:38 ?        00:00:00 [cpuhp/2]
+root         20      2  0 17:38 ?        00:00:00 [watchdog/2]
+root         21      2  0 17:38 ?        00:00:00 [migration/2]
+root         22      2  0 17:38 ?        00:00:00 [ksoftirqd/2]
+root         24      2  0 17:38 ?        00:00:00 [kworker/2:0H]
+root         25      2  0 17:38 ?        00:00:00 [cpuhp/3]
+root         26      2  0 17:38 ?        00:00:00 [watchdog/3]
+root         27      2  0 17:38 ?        00:00:00 [migration/3]
+root         28      2  0 17:38 ?        00:00:00 [ksoftirqd/3]
+root         30      2  0 17:38 ?        00:00:00 [kworker/3:0H]
+root         31      2  0 17:38 ?        00:00:00 [kdevtmpfs]
+root         32      2  0 17:38 ?        00:00:00 [netns]
+root         33      2  0 17:38 ?        00:00:00 [rcu_tasks_kthre]
+root         34      2  0 17:38 ?        00:00:00 [kauditd]
+root         35      2  0 17:38 ?        00:00:00 [kworker/0:1]
+root         36      2  0 17:38 ?        00:00:00 [kworker/1:1]
+root         37      2  0 17:38 ?        00:00:00 [kworker/3:1]
+root         38      2  0 17:38 ?        00:00:00 [khungtaskd]
+root         39      2  0 17:38 ?        00:00:00 [oom_reaper]
+root         40      2  0 17:38 ?        00:00:00 [writeback]
+root         41      2  0 17:38 ?        00:00:00 [kcompactd0]
+root         42      2  0 17:38 ?        00:00:00 [ksmd]
+root         43      2  0 17:38 ?        00:00:00 [khugepaged]
+root         44      2  0 17:38 ?        00:00:00 [crypto]
+root         45      2  0 17:38 ?        00:00:00 [kintegrityd]
+root         46      2  0 17:38 ?        00:00:00 [kblockd]
+root         48      2  0 17:38 ?        00:00:00 [ata_sff]
+root         49      2  0 17:38 ?        00:00:00 [md]
+root         50      2  0 17:38 ?        00:00:00 [edac-poller]
+root         51      2  0 17:38 ?        00:00:00 [devfreq_wq]
+root         52      2  0 17:38 ?        00:00:00 [watchdogd]
+root         55      2  0 17:38 ?        00:00:00 [kswapd0]
+root         56      2  0 17:38 ?        00:00:00 [ecryptfs-kthrea]
+root         98      2  0 17:38 ?        00:00:00 [kthrotld]
+root         99      2  0 17:38 ?        00:00:00 [acpi_thermal_pm]
+root        100      2  0 17:38 ?        00:00:00 [scsi_eh_0]
+root        101      2  0 17:38 ?        00:00:00 [scsi_tmf_0]
+root        102      2  0 17:38 ?        00:00:00 [scsi_eh_1]
+root        103      2  0 17:38 ?        00:00:00 [scsi_tmf_1]
+root        109      2  0 17:38 ?        00:00:00 [ipv6_addrconf]
+root        118      2  0 17:38 ?        00:00:00 [kstrp]
+root        135      2  0 17:38 ?        00:00:00 [charger_manager]
+root        203      2  0 17:38 ?        00:00:01 [kworker/0:2]
+root        207      2  0 17:38 ?        00:00:00 [mpt_poll_0]
+root        208      2  0 17:38 ?        00:00:00 [mpt/0]
+root        209      2  0 17:38 ?        00:00:00 [scsi_eh_2]
+root        210      2  0 17:38 ?        00:00:00 [scsi_tmf_2]
+root        211      2  0 17:38 ?        00:00:00 [scsi_eh_3]
+root        212      2  0 17:38 ?        00:00:00 [scsi_tmf_3]
+root        213      2  0 17:38 ?        00:00:00 [scsi_eh_4]
+root        214      2  0 17:38 ?        00:00:00 [scsi_tmf_4]
+root        215      2  0 17:38 ?        00:00:00 [scsi_eh_5]
+root        216      2  0 17:38 ?        00:00:00 [scsi_tmf_5]
+root        217      2  0 17:38 ?        00:00:00 [scsi_eh_6]
+root        218      2  0 17:38 ?        00:00:00 [scsi_tmf_6]
+root        219      2  0 17:38 ?        00:00:00 [scsi_eh_7]
+root        220      2  0 17:38 ?        00:00:00 [scsi_tmf_7]
+root        221      2  0 17:38 ?        00:00:00 [scsi_eh_8]
+root        222      2  0 17:38 ?        00:00:00 [scsi_tmf_8]
+root        223      2  0 17:38 ?        00:00:00 [scsi_eh_9]
+root        224      2  0 17:38 ?        00:00:00 [scsi_tmf_9]
+root        225      2  0 17:38 ?        00:00:00 [scsi_eh_10]
+root        226      2  0 17:38 ?        00:00:00 [scsi_tmf_10]
+root        227      2  0 17:38 ?        00:00:00 [scsi_eh_11]
+root        228      2  0 17:38 ?        00:00:00 [scsi_tmf_11]
+root        229      2  0 17:38 ?        00:00:00 [scsi_eh_12]
+root        230      2  0 17:38 ?        00:00:00 [scsi_tmf_12]
+root        231      2  0 17:38 ?        00:00:00 [scsi_eh_13]
+root        232      2  0 17:38 ?        00:00:00 [scsi_tmf_13]
+root        233      2  0 17:38 ?        00:00:00 [scsi_eh_14]
+root        234      2  0 17:38 ?        00:00:00 [scsi_tmf_14]
+root        235      2  0 17:38 ?        00:00:00 [scsi_eh_15]
+root        236      2  0 17:38 ?        00:00:00 [scsi_tmf_15]
+root        237      2  0 17:38 ?        00:00:00 [scsi_eh_16]
+root        238      2  0 17:38 ?        00:00:00 [scsi_tmf_16]
+root        239      2  0 17:38 ?        00:00:00 [scsi_eh_17]
+root        240      2  0 17:38 ?        00:00:00 [scsi_tmf_17]
+root        241      2  0 17:38 ?        00:00:00 [scsi_eh_18]
+root        242      2  0 17:38 ?        00:00:00 [scsi_tmf_18]
+root        243      2  0 17:38 ?        00:00:00 [scsi_eh_19]
+root        244      2  0 17:38 ?        00:00:00 [scsi_tmf_19]
+root        245      2  0 17:38 ?        00:00:00 [scsi_eh_20]
+root        246      2  0 17:38 ?        00:00:00 [scsi_tmf_20]
+root        247      2  0 17:38 ?        00:00:00 [scsi_eh_21]
+root        248      2  0 17:38 ?        00:00:00 [scsi_tmf_21]
+root        249      2  0 17:38 ?        00:00:00 [scsi_eh_22]
+root        250      2  0 17:38 ?        00:00:00 [scsi_tmf_22]
+root        251      2  0 17:38 ?        00:00:00 [scsi_eh_23]
+root        252      2  0 17:38 ?        00:00:00 [scsi_tmf_23]
+root        253      2  0 17:38 ?        00:00:00 [scsi_eh_24]
+root        254      2  0 17:38 ?        00:00:00 [scsi_tmf_24]
+root        255      2  0 17:38 ?        00:00:00 [scsi_eh_25]
+root        256      2  0 17:38 ?        00:00:00 [scsi_tmf_25]
+root        257      2  0 17:38 ?        00:00:00 [scsi_eh_26]
+root        258      2  0 17:38 ?        00:00:00 [scsi_tmf_26]
+root        259      2  0 17:38 ?        00:00:00 [scsi_eh_27]
+root        260      2  0 17:38 ?        00:00:00 [scsi_tmf_27]
+root        261      2  0 17:38 ?        00:00:00 [scsi_eh_28]
+root        262      2  0 17:38 ?        00:00:00 [scsi_tmf_28]
+root        263      2  0 17:38 ?        00:00:00 [scsi_eh_29]
+root        264      2  0 17:38 ?        00:00:00 [scsi_tmf_29]
+root        265      2  0 17:38 ?        00:00:00 [scsi_eh_30]
+root        266      2  0 17:38 ?        00:00:00 [scsi_tmf_30]
+root        267      2  0 17:38 ?        00:00:00 [scsi_eh_31]
+root        268      2  0 17:38 ?        00:00:00 [scsi_tmf_31]
+root        292      2  0 17:38 ?        00:00:00 [kworker/u256:27]
+root        296      2  0 17:38 ?        00:00:00 [scsi_eh_32]
+root        297      2  0 17:38 ?        00:00:00 [scsi_tmf_32]
+root        299      2  0 17:38 ?        00:00:00 [ttm_swap]
+root        300      2  0 17:38 ?        00:00:00 [irq/16-vmwgfx]
+root        302      2  0 17:38 ?        00:00:01 [kworker/0:1H]
+root        304      2  0 17:38 ?        00:00:00 [kworker/1:1H]
+root        307      2  0 17:38 ?        00:00:00 [kworker/3:1H]
+root        409      2  0 17:38 ?        00:00:00 [jbd2/sda1-8]
+root        410      2  0 17:38 ?        00:00:00 [ext4-rsv-conver]
+root        453      1  0 17:38 ?        00:00:00 /lib/systemd/systemd-journald
+root        473      1  0 17:38 ?        00:00:00 /lib/systemd/systemd-udevd
+root        474      1  0 17:38 ?        00:00:00 /sbin/lvmetad -f
+root        512      2  0 17:38 ?        00:00:00 [kworker/2:1H]
+root        559      1  0 17:38 ?        00:00:00 vmware-vmblock-fuse /run/vmblo
+root        562      1  0 17:38 ?        00:00:03 /usr/bin/vmtoolsd
+root        581      2  0 17:38 ?        00:00:00 [kworker/3:2]
+systemd+    583      1  0 17:38 ?        00:00:00 /lib/systemd/systemd-timesyncd
+systemd+    584      1  0 17:38 ?        00:00:00 /lib/systemd/systemd-resolved
+root        625      1  0 17:38 ?        00:00:00 /usr/sbin/irqbalance --foregro
+root        629      1  0 17:38 ?        00:00:00 /usr/bin/VGAuthService
+root        640      1  0 17:38 ?        00:00:00 /usr/sbin/acpid
+root        642      1  0 17:38 ?        00:00:00 /usr/sbin/cron -f
+root        646      1  0 17:38 ?        00:00:00 /usr/sbin/cupsd -l
+root        648      1  0 17:38 ?        00:00:00 /usr/sbin/ModemManager
+avahi       650      1  0 17:38 ?        00:00:00 avahi-daemon: running [Cathy-v
+syslog      655      1  0 17:38 ?        00:00:00 /usr/sbin/rsyslogd -n
+root        657      1  0 17:38 ?        00:00:00 /usr/lib/udisks2/udisksd
+root        660      1  0 17:38 ?        00:00:00 /usr/bin/python3 /usr/bin/netw
+root        666      1  0 17:38 ?        00:00:00 /lib/systemd/systemd-logind
+message+    670      1  0 17:38 ?        00:00:00 /usr/bin/dbus-daemon --system 
+avahi       673    650  0 17:38 ?        00:00:00 avahi-daemon: chroot helper
+root        752      2  0 17:38 ?        00:00:00 [kworker/u257:0]
+root        754      2  0 17:38 ?        00:00:00 [kworker/u257:2]
+root        834      1  0 17:38 ?        00:00:00 /usr/sbin/NetworkManager --no-
+root        835      1  0 17:38 ?        00:00:00 /sbin/wpa_supplicant -u -s -O 
+root        836      1  0 17:38 ?        00:00:00 /usr/lib/accountsservice/accou
+kernoops    859      1  0 17:38 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops    863      1  0 17:38 ?        00:00:00 /usr/sbin/kerneloops
+root        887      1  0 17:38 ?        00:00:00 /usr/lib/policykit-1/polkitd -
+root        888      1  0 17:38 ?        00:00:00 /usr/sbin/cups-browsed
+root        889      1  0 17:38 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+root        896      2  0 17:38 ?        00:00:00 [kworker/2:2]
+root        946      1  0 17:38 ?        00:00:00 /usr/sbin/lightdm
+root        951    834  0 17:38 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/
+root        958    946  0 17:38 tty7     00:00:10 /usr/lib/xorg/Xorg -core :0 -s
+root        962      1  0 17:38 tty1     00:00:00 /sbin/agetty -o -p -- \u --noc
+root       1128      1  0 17:38 ?        00:00:00 /usr/lib/upower/upowerd
+root       1144    946  0 17:38 ?        00:00:00 lightdm --session-child 12 19
+osys1000   1151      1  0 17:38 ?        00:00:00 /lib/systemd/systemd --user
+osys1000   1152   1151  0 17:38 ?        00:00:00 (sd-pam)
+osys1000   1169      1  0 17:38 ?        00:00:00 /usr/bin/gnome-keyring-daemon 
+osys1000   1172   1144  0 17:38 ?        00:00:00 cinnamon-session --session cin
+osys1000   1185   1151  0 17:38 ?        00:00:00 /usr/bin/dbus-daemon --session
+osys1000   1206   1172  0 17:38 ?        00:00:00 [xbrlapi] <defunct>
+osys1000   1236   1172  0 17:38 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im
+osys1000   1248   1151  0 17:38 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-b
+osys1000   1253   1248  0 17:38 ?        00:00:00 /usr/bin/dbus-daemon --config-
+osys1000   1255   1151  0 17:38 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-
+osys1000   1267   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1268   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1269   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1270   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1271   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1281   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1286   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfsd
+osys1000   1293   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/
+osys1000   1297   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1305   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1308   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1309   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1315   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1317   1172  0 17:38 ?        00:00:02 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1318   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1319   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1330      1  0 17:38 ?        00:00:02 /usr/bin/pulseaudio --start --
+rtkit      1333      1  0 17:38 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+osys1000   1336   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1337   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1341   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1345   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1350   1172  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+root       1368      2  0 17:38 ?        00:00:00 [krfcommd]
+osys1000   1370   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-vol
+osys1000   1376   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-
+osys1000   1382   1151  0 17:38 ?        00:00:00 /usr/lib/gnome-online-accounts
+osys1000   1390   1151  0 17:38 ?        00:00:00 /usr/lib/dconf/dconf-service
+osys1000   1395   1172  0 17:38 ?        00:00:00 /usr/bin/python3 /usr/bin/cinn
+colord     1399      1  0 17:38 ?        00:00:00 /usr/lib/colord/colord
+osys1000   1411   1151  0 17:38 ?        00:00:00 /usr/lib/gnome-online-accounts
+osys1000   1419      1  0 17:38 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinn
+osys1000   1420   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-
+osys1000   1433   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-vol
+osys1000   1438   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-
+osys1000   1443   1395  0 17:38 ?        00:00:17 cinnamon --replace
+osys1000   1458      1  0 17:38 ?        00:00:03 /usr/bin/vmtoolsd -n vmusr --b
+osys1000   1460   1172  0 17:38 ?        00:00:00 /usr/lib/policykit-1-gnome/pol
+osys1000   1466   1172  0 17:38 ?        00:00:01 nemo-desktop
+osys1000   1469   1172  0 17:38 ?        00:00:00 nm-applet
+osys1000   1470   1172  0 17:38 ?        00:00:00 /usr/bin/python3 /usr/bin/cinn
+osys1000   1471   1172  0 17:38 ?        00:00:00 blueberry-obex-agent
+osys1000   1496   1151  0 17:38 ?        00:00:00 /usr/lib/bluetooth/obexd
+osys1000   1507   1286  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --sp
+osys1000   1533   1151  0 17:38 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+osys1000   1548   1172  0 17:39 ?        00:00:00 cinnamon-screensaver
+osys1000   1549   1172  0 17:39 ?        00:00:00 /usr/bin/python3 /usr/bin/blue
+osys1000   1550   1549  0 17:39 ?        00:00:00 sh -c /usr/lib/blueberry/blueb
+osys1000   1551   1550  0 17:39 ?        00:00:00 python2 /usr/lib/blueberry/blu
+osys1000   1563   1551  0 17:39 ?        00:00:00 python2 /usr/lib/blueberry/saf
+osys1000   1564   1563  0 17:39 ?        00:00:00 /usr/sbin/rfkill event
+osys1000   1583   1151  0 17:39 ?        00:00:03 /usr/lib/gnome-terminal/gnome-
+osys1000   1590   1583  0 17:39 pts/0    00:00:00 bash
+osys1000   1605      1  0 17:39 ?        00:00:00 mintUpdate
+osys1000   1623   1172  0 17:39 ?        00:00:00 /usr/bin/python3 /usr/share/sy
+root       1655      2  0 17:45 ?        00:00:00 [kworker/u256:0]
+root       1732      2  0 18:02 ?        00:00:00 [kworker/1:2]
+root       1743      2  0 18:04 ?        00:00:00 [kworker/2:1]
+root       1759      2  0 18:12 ?        00:00:00 [kworker/u256:1]
+osys1000   1776   1590  0 18:17 pts/0    00:00:00 ps -ef
+osys1000@Cathy-virtual-machine:~$ ps -ef | wc -l
+241
+osys1000@Cathy-virtual-machine:~$ sleep 3600 & 
+[1] 1781
+osys1000@Cathy-virtual-machine:~$ ps -ef | grep sleep
+osys1000   1781   1590  0 18:19 pts/0    00:00:00 sleep 3600
+osys1000   1783   1590  0 18:19 pts/0    00:00:00 grep --color=auto sleep
+osys1000@Cathy-virtual-machine:~$ kill 1781
+osys1000@Cathy-virtual-machine:~$ cat /var/log/syslog | grep dhcp
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4329] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4330] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4331] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4331] dhcp4 (ens33):   lease time 1800
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4331] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4331] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4332] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 07:42:09 Cathy-virtual-machine NetworkManager[674]: <info>  [1548074529.4332] dhcp4 (ens33): state changed bound -> bound
+Jan 21 07:42:09 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 07:42:09 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8485] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8485] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33):   lease time 1800
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 07:54:16 Cathy-virtual-machine NetworkManager[674]: <info>  [1548075256.8486] dhcp4 (ens33): state changed bound -> bound
+Jan 21 07:54:16 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 07:54:16 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2587] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2588] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2588] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2588] dhcp4 (ens33):   lease time 1800
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2588] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2588] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2589] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 08:08:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076108.2589] dhcp4 (ens33): state changed bound -> bound
+Jan 21 08:08:28 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 08:08:28 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4010] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4011] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4011] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4012] dhcp4 (ens33):   lease time 1800
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4012] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4012] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4012] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 08:23:10 Cathy-virtual-machine NetworkManager[674]: <info>  [1548076990.4013] dhcp4 (ens33): state changed bound -> bound
+Jan 21 08:23:10 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 08:23:10 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5059] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5060] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5060] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5061] dhcp4 (ens33):   lease time 1800
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5061] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5061] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5061] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 08:34:42 Cathy-virtual-machine NetworkManager[674]: <info>  [1548077682.5062] dhcp4 (ens33): state changed bound -> bound
+Jan 21 08:34:42 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 08:34:42 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7387] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7388] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7388] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7389] dhcp4 (ens33):   lease time 1800
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7389] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7390] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7391] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 08:46:11 Cathy-virtual-machine NetworkManager[674]: <info>  [1548078371.7391] dhcp4 (ens33): state changed bound -> bound
+Jan 21 08:46:11 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 08:46:11 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1696] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   lease time 1800
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 08:59:28 Cathy-virtual-machine NetworkManager[674]: <info>  [1548079168.1697] dhcp4 (ens33): state changed bound -> bound
+Jan 21 08:59:28 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 08:59:28 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 17:38:45 Cathy-virtual-machine kernel: [    5.940215] audit: type=1400 audit(1548106725.049:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=576 comm="apparmor_parser"
+Jan 21 17:38:45 Cathy-virtual-machine kernel: [    5.940216] audit: type=1400 audit(1548106725.049:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=576 comm="apparmor_parser"
+Jan 21 17:38:46 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106726.4914] dhcp-init: Using DHCP client 'dhclient'
+Jan 21 17:38:46 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106726.5329] dhcp4 (ens33): activation: beginning transaction (timeout in 45 seconds)
+Jan 21 17:38:46 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106726.5854] dhcp4 (ens33): dhclient started with pid 951
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7626] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7626] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33):   lease time 1800
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 17:38:47 Cathy-virtual-machine NetworkManager[834]: <info>  [1548106727.7627] dhcp4 (ens33): state changed unknown -> bound
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   lease time 1800
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0853] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 17:51:12 Cathy-virtual-machine NetworkManager[834]: <info>  [1548107472.0854] dhcp4 (ens33): state changed bound -> bound
+Jan 21 17:51:12 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 17:51:12 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6640] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6640] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33):   lease time 1800
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 18:04:29 Cathy-virtual-machine NetworkManager[834]: <info>  [1548108269.6641] dhcp4 (ens33): state changed bound -> bound
+Jan 21 18:04:29 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 18:04:29 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3085] dhcp4 (ens33):   address 192.168.94.129
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   gateway 192.168.94.2
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   lease time 1800
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   nameserver '192.168.94.2'
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   domain name 'localdomain'
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3086] dhcp4 (ens33):   wins '192.168.94.2'
+Jan 21 18:16:51 Cathy-virtual-machine NetworkManager[834]: <info>  [1548109011.3087] dhcp4 (ens33): state changed bound -> bound
+Jan 21 18:16:51 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: new request (1 scripts)
+Jan 21 18:16:51 Cathy-virtual-machine nm-dispatcher: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+[1]+  Terminated              sleep 3600
+osys1000@Cathy-virtual-machine:~$ cat /var/log/syslog | grep dhcp | wc -l
+113
+
+------------------- sort, uniq ----------------------
+
+osys1000@Cathy-virtual-machine:~$ sort
+banana
+apple
+cucumber
+apple
+banana
+cucumber
+osys1000@Cathy-virtual-machine:~$ echo "cat" > animal.txt
+osys1000@Cathy-virtual-machine:~$ echo "dog" > animal.txt
+osys1000@Cathy-virtual-machine:~$ echo "ant" >> animal.txt
+osys1000@Cathy-virtual-machine:~$ echo "bug" >> animal.txt
+osys1000@Cathy-virtual-machine:~$ cat animal.txt 
+dog
+ant
+bug
+osys1000@Cathy-virtual-machine:~$ echo "cat" >> animal.txt
+osys1000@Cathy-virtual-machine:~$ cat animal.txt 
+dog
+ant
+bug
+cat
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | sort
+ant
+bug
+cat
+dog
+osys1000@Cathy-virtual-machine:~$ echo "bug" >> animal.txt
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | sort
+ant
+bug
+bug
+cat
+dog
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | uniq
+dog
+ant
+bug
+cat
+bug
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | sort
+ant
+bug
+bug
+cat
+dog
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | uniq
+dog
+ant
+bug
+cat
+bug
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | sort | uniq
+ant
+bug
+cat
+dog
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | uniq
+dog
+ant
+bug
+cat
+bug
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | uniq
+dog
+ant
+bug
+cat
+bug
+osys1000@Cathy-virtual-machine:~$ 
+
+-------------------------------- tee ----------------------------
+osys1000@Cathy-virtual-machine:~$ cat animal.txt | sort | uniq | tee animal_output.txt
+ant
+bug
+cat
+dog
+osys1000@Cathy-virtual-machine:~$ cat animal_output.txt 
+ant
+bug
+cat
+dog
+
+---------------------- more, less, tail, head -----------------
+
+osys1000@Cathy-virtual-machine:~$ cat /var/log/syslog | wc -l
+2515
+osys1000@Cathy-virtual-machine:~$ more /var/log/syslog
+
+osys1000@Cathy-virtual-machine:~$ less /var/log/syslog
+osys1000@Cathy-virtual-machine:~$ man pwd
+osys1000@Cathy-virtual-machine:~$ tail /var/log/syslog
+Jan 21 19:15:54 Cathy-virtual-machine avahi-daemon[650]: Registering new address record for fe80::f35c:27fc:be08:7f2b on ens33.*.
+Jan 21 19:16:08 Cathy-virtual-machine NetworkManager[834]: <info>  [1548112568.1185] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jan 21 19:16:08 Cathy-virtual-machine dbus-daemon[670]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.14' (uid=0 pid=834 comm="/usr/sbin/NetworkManager --no-daemon " label="unconfined")
+Jan 21 19:16:08 Cathy-virtual-machine systemd[1]: Starting Network Manager Script Dispatcher Service...
+Jan 21 19:16:08 Cathy-virtual-machine dbus-daemon[670]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan 21 19:16:08 Cathy-virtual-machine systemd[1]: Started Network Manager Script Dispatcher Service.
+Jan 21 19:16:08 Cathy-virtual-machine nm-dispatcher: req:1 'connectivity-change': new request (1 scripts)
+Jan 21 19:16:08 Cathy-virtual-machine nm-dispatcher: req:1 'connectivity-change': start running ordered scripts...
+Jan 21 19:16:18 Cathy-virtual-machine cinnamon-screensaver-pam-helper: pam_ecryptfs: seteuid error
+Jan 21 19:17:01 Cathy-virtual-machine CRON[2070]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+osys1000@Cathy-virtual-machine:~$ man tail
+osys1000@Cathy-virtual-machine:~$ man more
+osys1000@Cathy-virtual-machine:~$ whatis more
+more (1)             - file perusal filter for crt viewing
+osys1000@Cathy-virtual-machine:~$ whatis less
+less (1)             - opposite of more
+osys1000@Cathy-virtual-machine:~$ tail -n 3 /var/log/syslog
+Jan 21 19:16:08 Cathy-virtual-machine nm-dispatcher: req:1 'connectivity-change': start running ordered scripts...
+Jan 21 19:16:18 Cathy-virtual-machine cinnamon-screensaver-pam-helper: pam_ecryptfs: seteuid error
+Jan 21 19:17:01 Cathy-virtual-machine CRON[2070]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+osys1000@Cathy-virtual-machine:~$ head -5 /var/log/syslog
+Jan 21 07:33:49 Cathy-virtual-machine rsyslogd:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="798" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Jan 21 07:33:51 Cathy-virtual-machine anacron[672]: Job `cron.daily' terminated
+Jan 21 07:36:24 Cathy-virtual-machine dbus-daemon[1293]: [session uid=1000 pid=1293] Activating via systemd: service name='org.gnome.Terminal' unit='gnome-terminal-server.service' requested by ':1.59' (uid=1000 pid=1939 comm="/usr/bin/gnome-terminal.real " label="unconfined")
+Jan 21 07:36:24 Cathy-virtual-machine systemd[1259]: Starting GNOME Terminal Server...
+Jan 21 07:36:24 Cathy-virtual-machine dbus-daemon[1293]: [session uid=1000 pid=1293] Successfully activated service 'org.gnome.Terminal'
+osys1000@Cathy-virtual-machine:~$ ps -ef | head -5
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 17:51 ?        00:00:02 /sbin/init splash
+root          2      0  0 17:51 ?        00:00:00 [kthreadd]
+root          4      2  0 17:51 ?        00:00:00 [kworker/0:0H]
+root          6      2  0 17:51 ?        00:00:00 [mm_percpu_wq]
+osys1000@Cathy-virtual-machine:~$ ^C
+osys1000@Cathy-virtual-machine:~$ ^C
+osys1000@Cathy-virtual-machine:~$ 
+
+
+

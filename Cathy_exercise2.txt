@@ -1,0 +1,46 @@
+Script started on 2019-01-16 08:11:56-0500
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo
+
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cal
+    January 2019      
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 [7m16[27m 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30 31        
+                      
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ mkdir --help
+Usage: mkdir [OPTION]... DIRECTORY...
+Create the DIRECTORY(ies), if they do not already exist.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+  -p, --parents     no error if existing, make parent directories as needed
+  -v, --verbose     print a message for each created directory
+  -Z                   set SELinux security context of each created directory
+                         to the default type
+      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
+                         or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/mkdir>
+or available locally via: info '(coreutils) mkdir invocation'
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ whai[Ktis
+whatis what?
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ whatis echo
+echo (1)             - display a line of text
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo
+
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ whatis redir[K[K[K[Kmdir
+rmdir (1)            - remove empty directories
+rmdir (2)            - delete a directory
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-01-16 08:13:49-0500

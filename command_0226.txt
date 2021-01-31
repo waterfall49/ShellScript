@@ -1,0 +1,101 @@
+Command	Description	Example
+#!/bin/bash	Must be the first line of a shell script file	
+<	stdin	wc < /var/log/syslog
+>	stdout	echo ¡°hello¡± > test.txt
+>>	stdout. Append to the file	echo ¡°world¡± >> test.txt
+2> 2>>	Error	ls x* 2>> error_file.txt
+*	Wildcard 	
+$0, $1, $2,¡¦	"Positional parameters for commands. $0 is the name of the command (or the script file) 
+
+                         while $1, $2, $3¡¦ are the parameters of the command"	"echo ""Disk usage: `echo $1`""
+ df -h $1"
+bash -x	Run the script in debug mode	bash -x myScript.sh
+cal	Displays calendar	cal ?m February
+chmod	Change file mode bits (4 is read) -R (all sub folder)	"chmod 777 test.txt
+chmod u=rw, g=r, o=w test.txt"
+chown	Change file owner and group 	sudo chown root(user):root(group) test.txt
+cmp	Compare 2 files byte by byte	cmp ?b col1.txt col2.txt
+comm	Compare 2 sorted files line by line	comm -1 col2.txt col3.txt
+cowsay/cowthink	Configurable speaking/thinking cow	cowsay ?s ¡°heller¡¦¡±
+cp	Copy file including file permissions	cp bin/file1.sh bin/file2.sh
+date	Displays date and time	date
+df	Report file system disk space usage	df -h /home
+diff	Compare files line by line	diff ?c col2.txt col3.txt
+echo	Prints text	echo ¡°Hello¡±
+export	Export environment variable to make it available in every session	export OWNER='Tin'
+find	Search for files in a directory hierarchy	sudo find /etc ?size +64k
+grep	Prints lines matching a pattern	"ls ?la | grep exer, grep ""log"" < /var/log/¡¦.., 
+
+             cat /var/log/syslog | grep dhcp | wc -l
+head	Outputs the first 10 lines (default).	head ?n 3 /var/log/syslog
+history		
+info		
+less	Opposite of more	less /var/log/syslog
+locate	Find files by name	locate ?c fstab
+ls	Lists directory contents	ls -la
+lynx	Web browser	lynx www.google.ca
+mkdir	Creates directory	mkdir bin (or what you want to call it)
+more	Display one page at a time for easier viewing	more /var/log/syslog
+mv	move file 	mv test.txt bin, mv a.txt b.txt, mv a.txt /folder
+parted	A partition manipulation program	sudo parted ?l
+paste	Merge lines of files	paste col1.txt col2.txt
+pr	Convert text files for printing	pr -h ¡°A Header¡± test.txt
+ps	Returns a snapshot of the current processes	ps ?ef(every full), ps -ef | wc -l
+read	Get user input	"echo ""Enter your name"" 
+ read name
+ echo ""Hello $name"""
+rm	Deletes a file	rm readme.txt
+rm -r	Deletes a directory and file in directory	
+rmdir	Removes directory	rmdir bin
+set -x, set +x	Debug around a block of command in the script file	set -x echo "I am `whoami`" set +x
+set/env	Without parameters can be used to display current variables in the session	set | more
+script	Creates a new script file. Use -a to append to the file	script exercise1.txt
+sh	Enters the Bourne shell	sh
+sort	Sort lines of texts	cat fruits.txt | sort
+su	Become the super user	su
+sudo	Execute command as a super user	sudo <command>
+systemctl	Control the system system and service manager	systemctl stop network
+tail	Outputs the last 10 lines (default)	tail ?3 /var/log/syslog, tail -n 3 /var/log/syslog
+tee	Outputs to the screen and to a file	echo ¡°hello¡± | tee test.txt
+touch	Creates a new blank file	touch myfile.txt
+tr	Translate or delete characters	cat test.txt | tr ?d ¡®\n¡¯
+uname	Prints system information	uname -a
+uniq	Shows only unique values	cat colors.txt | sort | uniq
+wc	Displays the line count, word count, and character count	wc < /var/log/syslog
+whatis	Displays one-line manuals	whatis echo mkdir
+whoami	Display user ID	whoami
+pwd	Print working directory	
+cd	Change directory	cd ~ (goes to home directory)
+clear	Clears screen	
+pause		
+shutdown	Powers off virtual machine	shutdown -h now
+sleep		
+chgrp 		
+whoami		
+which 	Determines if the file is executable	which filename.sh
+mv		mv 
+history		
+gedit		
+-eq	Equal to	
+-ne	Not equal to	
+-gt	Greater than	
+-ge	Greater than or equal to	
+-lt	less than	
+-le	less than or equal to	
+-a or &&	AND (both cont=ditions must be true to evaluate as true_	
+-o or ||	OR (either condition must be true	
+-e	File exists	
+-f	Regular file (i.e. not directory or device)	
+-s	File not zero size (i.e., newly "touched" file)	
+-d	File is a directory	
+-r	File has read rights(for the user running script)	
+-w	File has write rights(for the user running script)	
+-x	File has execute rights(for the user running script)	
+-o	File owned by same user(for the user running script)	
+-G	File owned by same group(for the user running script)	
+-ot	File older than other file	
+-nt	File newer than other file	
+		
+variable	Owner = Mike, echo $Owner	
+	Owner = $Owner 'Crocker' (append)	
+	for permanent, in the text file (export Owner)  !!	

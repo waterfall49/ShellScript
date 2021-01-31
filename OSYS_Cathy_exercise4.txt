@@ -1,0 +1,50 @@
+                  ""VXXXXXXXXXXXXXXXXXXV""
+osys1000@Cathy-virtual-machine:~$ cowsay -f Dragons "Hi"
+cowsay: Could not find Dragons cowfile!
+osys1000@Cathy-virtual-machine:~$ cowsay -f dragons "Hi"
+cowsay: Could not find dragons cowfile!
+osys1000@Cathy-virtual-machine:~$ cowsay -f dragon "Hi"
+ ____
+< Hi >
+ ----
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \    
+           /     /  \/_/    //   |  \  \  
+           @_^_@'/   \/_   //    |   \   \ 
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+osys1000@Cathy-virtual-machine:~$ figlet Welcome
+
+Command 'figlet' not found, but can be installed with:
+
+sudo apt install figlet
+sudo apt install toilet
+
+osys1000@Cathy-virtual-machine:~$ cowsay figlet Welcome
+ ________________
+< figlet Welcome >
+ ----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+osys1000@Cathy-virtual-machine:~$ cowsay -f figlet Welcome
+cowsay: Could not find figlet cowfile!
+osys1000@Cathy-virtual-machine:~$ toilet -f mono12 -F metal Linux
+
+Command 'toilet' not found, but can be installed with:
+
+sudo apt install toilet
+
+osys1000@Cathy-virtual-machine:~$ ^C

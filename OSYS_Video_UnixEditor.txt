@@ -1,0 +1,65 @@
+osys1000@Cathy-virtual-machine:~$ vi
+osys1000@Cathy-virtual-machine:~$ ls
+animal_output.txt  Desktop    error_file.txt   Pictures   Videos
+animal.txt         Documents  Music            Public
+count_file.txt     Downloads  output_file.txt  Templates
+osys1000@Cathy-virtual-machine:~$ vi count_file.txt 
+osys1000@Cathy-virtual-machine:~$ vi count_file.txt 
+osys1000@Cathy-virtual-machine:~$ vi output_file.txt 
+
+[1]+  Stopped                 vi output_file.txt
+osys1000@Cathy-virtual-machine:~$ vi output_file.txt 
+osys1000@Cathy-virtual-machine:~$ vi output_file.txt 
+osys1000@Cathy-virtual-machine:~$ cat output_file.txt 
+dggddd
+A
+B
+B
+B
+
+D
+shome/osys1000
+osys1000
+osys1000@Cathy-virtual-machine:~$ vi vi_file.txt
+osys1000@Cathy-virtual-machine:~$ 
+osys1000@Cathy-virtual-machine:~$ vi vi_file.txt
+osys1000@Cathy-virtual-machine:~$ cat vi_file.txt 
+The rain in Spain fall mainly on the plain aaa
+Line 2
+LIThe rain in Spain fall mainly on the plain aaa
+osys1000@Cathy-virtual-machine:~$ nano
+osys1000@Cathy-virtual-machine:~$ cat nano\ file.txt 
+start typing sometion
+add some more 
+osys1000@Cathy-virtual-machine:~$ nano nano\ file.txt 
+osys1000@Cathy-virtual-machine:~$ cat nano\ file.txt 
+start typing sometion
+add some more 
+add even more
+osys1000@Cathy-virtual-machine:~$ which xed
+/usr/bin/xed
+osys1000@Cathy-virtual-machine:~$ whatis which
+which (1)            - locate a command
+osys1000@Cathy-virtual-machine:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+osys1000@Cathy-virtual-machine:~$ xed
+pwd
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ xed & 
+[2] 2928
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ kill 2928
+osys1000@Cathy-virtual-machine:~$ xed xed_file.txt &
+[3] 2937
+[2]   Terminated              xed
+osys1000@Cathy-virtual-machine:~$ cat xed_file.txt 
+Hello, from xed.
+Not much to say.
+All graphical editors are pretty simillar.
+osys1000@Cathy-virtual-machine:~$ wc xed_file.txt 
+ 3 13 77 xed_file.txt
+osys1000@Cathy-virtual-machine:~$ 
+
+

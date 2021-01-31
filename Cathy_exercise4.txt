@@ -1,0 +1,508 @@
+Script started on 2019-01-23 09:18:18-0400
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ehc[K[Khc[K[K[Kcat [K[K[K[Kls -[K[K
+animal_output.txt    [0m[01;34mDesktop[0m         output_file.txt   [01;34mTemplates[0m
+animal.txt           [01;34mDocuments[0m       [01;34mPictures[0m          [01;34mVideos[0m
+cat                  [01;34mDownloads[0m       [01;34mPublic[0m            vi_file.txt
+Cathy_exercise4.txt  error_file.txt  sorted_stuff.txt
+count_file.txt       [01;34mMusic[0m           stuff.text
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat su[K[Kser[K[Korted_stuff.txt 
+apple
+bat
+frog
+zevra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat sorted_stuff.txt | tr 'v' 'b'
+apple
+bat
+frog
+zebra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat sorted_stuff.txt | tr 'v' 'b'[1@t[C[1P[C[C[C[1Pb'[C[1P'[1P' '[C't't'm'a'n'
+apple
+bat
+frog
+zevra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat sorted_stuff.txt | tr 't' 'ttman'[4Pv' 'b'[K[K[K[K[K[K[K[K[K[Kpr
+
+
+2019-01-23 09:21                                                  Page 1
+
+
+apple
+bat
+frog
+zevra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ pr [K[Ks -ef | pr[K[K[K[K>> m[KM[KMyPrg[Kogran[Kms.txt | pr
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat[Kt MyPrograms.txt 
+UID         PID   PPID  C STIME TTY          TIME CMD
+root          1      0  0 08:11 ?        00:00:02 /sbin/init splash
+root          2      0  0 08:11 ?        00:00:00 [kthreadd]
+root          4      2  0 08:11 ?        00:00:00 [kworker/0:0H]
+root          6      2  0 08:11 ?        00:00:00 [mm_percpu_wq]
+root          7      2  0 08:11 ?        00:00:00 [ksoftirqd/0]
+root          8      2  0 08:11 ?        00:00:01 [rcu_sched]
+root          9      2  0 08:11 ?        00:00:00 [rcu_bh]
+root         10      2  0 08:11 ?        00:00:00 [migration/0]
+root         11      2  0 08:11 ?        00:00:00 [watchdog/0]
+root         12      2  0 08:11 ?        00:00:00 [cpuhp/0]
+root         13      2  0 08:11 ?        00:00:00 [cpuhp/1]
+root         14      2  0 08:11 ?        00:00:00 [watchdog/1]
+root         15      2  0 08:11 ?        00:00:00 [migration/1]
+root         16      2  0 08:11 ?        00:00:00 [ksoftirqd/1]
+root         18      2  0 08:11 ?        00:00:00 [kworker/1:0H]
+root         19      2  0 08:11 ?        00:00:00 [cpuhp/2]
+root         20      2  0 08:11 ?        00:00:00 [watchdog/2]
+root         21      2  0 08:11 ?        00:00:00 [migration/2]
+root         22      2  0 08:11 ?        00:00:01 [ksoftirqd/2]
+root         24      2  0 08:11 ?        00:00:00 [kworker/2:0H]
+root         25      2  0 08:11 ?        00:00:00 [cpuhp/3]
+root         26      2  0 08:11 ?        00:00:00 [watchdog/3]
+root         27      2  0 08:11 ?        00:00:00 [migration/3]
+root         28      2  0 08:11 ?        00:00:00 [ksoftirqd/3]
+root         30      2  0 08:11 ?        00:00:00 [kworker/3:0H]
+root         31      2  0 08:11 ?        00:00:00 [kdevtmpfs]
+root         32      2  0 08:11 ?        00:00:00 [netns]
+root         33      2  0 08:11 ?        00:00:00 [rcu_tasks_kthre]
+root         34      2  0 08:11 ?        00:00:00 [kauditd]
+root         35      2  0 08:11 ?        00:00:00 [kworker/0:1]
+root         36      2  0 08:11 ?        00:00:03 [kworker/1:1]
+root         37      2  0 08:11 ?        00:00:00 [kworker/2:1]
+root         38      2  0 08:11 ?        00:00:00 [khungtaskd]
+root         39      2  0 08:11 ?        00:00:00 [oom_reaper]
+root         40      2  0 08:11 ?        00:00:00 [writeback]
+root         41      2  0 08:11 ?        00:00:00 [kcompactd0]
+root         42      2  0 08:11 ?        00:00:00 [ksmd]
+root         43      2  0 08:11 ?        00:00:00 [khugepaged]
+root         44      2  0 08:11 ?        00:00:00 [crypto]
+root         45      2  0 08:11 ?        00:00:00 [kintegrityd]
+root         46      2  0 08:11 ?        00:00:00 [kblockd]
+root         47      2  0 08:11 ?        00:00:00 [ata_sff]
+root         48      2  0 08:11 ?        00:00:00 [md]
+root         49      2  0 08:11 ?        00:00:00 [edac-poller]
+root         50      2  0 08:11 ?        00:00:00 [devfreq_wq]
+root         51      2  0 08:11 ?        00:00:00 [watchdogd]
+root         55      2  0 08:11 ?        00:00:00 [kswapd0]
+root         56      2  0 08:11 ?        00:00:00 [ecryptfs-kthrea]
+root         98      2  0 08:11 ?        00:00:00 [kthrotld]
+root         99      2  0 08:11 ?        00:00:00 [acpi_thermal_pm]
+root        100      2  0 08:11 ?        00:00:00 [scsi_eh_0]
+root        101      2  0 08:11 ?        00:00:00 [scsi_tmf_0]
+root        102      2  0 08:11 ?        00:00:00 [scsi_eh_1]
+root        103      2  0 08:11 ?        00:00:00 [scsi_tmf_1]
+root        109      2  0 08:11 ?        00:00:00 [ipv6_addrconf]
+root        118      2  0 08:11 ?        00:00:00 [kstrp]
+root        135      2  0 08:11 ?        00:00:00 [charger_manager]
+root        173      2  0 08:11 ?        00:00:00 [kworker/3:2]
+root        191      2  0 08:11 ?        00:00:00 [mpt_poll_0]
+root        192      2  0 08:11 ?        00:00:00 [mpt/0]
+root        193      2  0 08:11 ?        00:00:00 [scsi_eh_2]
+root        194      2  0 08:11 ?        00:00:00 [scsi_tmf_2]
+root        195      2  0 08:11 ?        00:00:00 [scsi_eh_3]
+root        196      2  0 08:11 ?        00:00:00 [scsi_tmf_3]
+root        197      2  0 08:11 ?        00:00:00 [scsi_eh_4]
+root        198      2  0 08:11 ?        00:00:00 [scsi_tmf_4]
+root        199      2  0 08:11 ?        00:00:00 [scsi_eh_5]
+root        200      2  0 08:11 ?        00:00:00 [scsi_tmf_5]
+root        201      2  0 08:11 ?        00:00:00 [scsi_eh_6]
+root        202      2  0 08:11 ?        00:00:00 [scsi_tmf_6]
+root        203      2  0 08:11 ?        00:00:00 [scsi_eh_7]
+root        204      2  0 08:11 ?        00:00:00 [scsi_tmf_7]
+root        205      2  0 08:11 ?        00:00:00 [scsi_eh_8]
+root        206      2  0 08:11 ?        00:00:00 [scsi_tmf_8]
+root        207      2  0 08:11 ?        00:00:00 [scsi_eh_9]
+root        208      2  0 08:11 ?        00:00:00 [scsi_tmf_9]
+root        209      2  0 08:11 ?        00:00:00 [scsi_eh_10]
+root        210      2  0 08:11 ?        00:00:00 [scsi_tmf_10]
+root        211      2  0 08:11 ?        00:00:00 [scsi_eh_11]
+root        212      2  0 08:11 ?        00:00:00 [scsi_tmf_11]
+root        213      2  0 08:11 ?        00:00:00 [scsi_eh_12]
+root        214      2  0 08:11 ?        00:00:00 [scsi_tmf_12]
+root        215      2  0 08:11 ?        00:00:00 [scsi_eh_13]
+root        216      2  0 08:11 ?        00:00:00 [scsi_tmf_13]
+root        217      2  0 08:11 ?        00:00:00 [scsi_eh_14]
+root        218      2  0 08:11 ?        00:00:00 [scsi_tmf_14]
+root        219      2  0 08:11 ?        00:00:00 [scsi_eh_15]
+root        220      2  0 08:11 ?        00:00:00 [scsi_tmf_15]
+root        221      2  0 08:11 ?        00:00:00 [scsi_eh_16]
+root        222      2  0 08:11 ?        00:00:00 [scsi_tmf_16]
+root        223      2  0 08:11 ?        00:00:00 [scsi_eh_17]
+root        224      2  0 08:11 ?        00:00:00 [scsi_tmf_17]
+root        225      2  0 08:11 ?        00:00:00 [scsi_eh_18]
+root        226      2  0 08:11 ?        00:00:00 [scsi_tmf_18]
+root        227      2  0 08:11 ?        00:00:00 [scsi_eh_19]
+root        228      2  0 08:11 ?        00:00:00 [scsi_tmf_19]
+root        229      2  0 08:11 ?        00:00:00 [scsi_eh_20]
+root        230      2  0 08:11 ?        00:00:00 [scsi_tmf_20]
+root        231      2  0 08:11 ?        00:00:00 [scsi_eh_21]
+root        232      2  0 08:11 ?        00:00:00 [scsi_tmf_21]
+root        233      2  0 08:11 ?        00:00:00 [scsi_eh_22]
+root        234      2  0 08:11 ?        00:00:00 [scsi_tmf_22]
+root        235      2  0 08:11 ?        00:00:00 [scsi_eh_23]
+root        236      2  0 08:11 ?        00:00:00 [scsi_tmf_23]
+root        237      2  0 08:11 ?        00:00:00 [scsi_eh_24]
+root        238      2  0 08:11 ?        00:00:00 [scsi_tmf_24]
+root        239      2  0 08:11 ?        00:00:00 [scsi_eh_25]
+root        240      2  0 08:11 ?        00:00:00 [scsi_tmf_25]
+root        241      2  0 08:11 ?        00:00:00 [scsi_eh_26]
+root        242      2  0 08:11 ?        00:00:00 [scsi_tmf_26]
+root        243      2  0 08:11 ?        00:00:00 [scsi_eh_27]
+root        244      2  0 08:11 ?        00:00:00 [scsi_tmf_27]
+root        245      2  0 08:11 ?        00:00:00 [scsi_eh_28]
+root        246      2  0 08:11 ?        00:00:00 [scsi_tmf_28]
+root        247      2  0 08:11 ?        00:00:00 [scsi_eh_29]
+root        248      2  0 08:11 ?        00:00:00 [scsi_tmf_29]
+root        249      2  0 08:11 ?        00:00:00 [scsi_eh_30]
+root        250      2  0 08:11 ?        00:00:00 [scsi_tmf_30]
+root        251      2  0 08:11 ?        00:00:00 [scsi_eh_31]
+root        252      2  0 08:11 ?        00:00:00 [scsi_tmf_31]
+root        276      2  0 08:11 ?        00:00:01 [kworker/u256:28]
+root        277      2  0 08:11 ?        00:00:02 [kworker/u256:29]
+root        279      2  0 08:11 ?        00:00:00 [scsi_eh_32]
+root        280      2  0 08:11 ?        00:00:00 [scsi_tmf_32]
+root        282      2  0 08:11 ?        00:00:00 [ttm_swap]
+root        283      2  0 08:11 ?        00:00:00 [irq/16-vmwgfx]
+root        286      2  0 08:11 ?        00:00:00 [kworker/0:1H]
+root        287      2  0 08:11 ?        00:00:00 [kworker/3:1H]
+root        391      2  0 08:11 ?        00:00:00 [jbd2/sda1-8]
+root        392      2  0 08:11 ?        00:00:00 [ext4-rsv-conver]
+root        440      1  0 08:11 ?        00:00:00 /lib/systemd/systemd-journald
+root        443      2  0 08:11 ?        00:00:00 [kworker/1:1H]
+root        446      2  0 08:11 ?        00:00:00 [kworker/1:2]
+root        450      2  0 08:11 ?        00:00:00 [kworker/2:1H]
+root        459      1  0 08:11 ?        00:00:00 /lib/systemd/systemd-udevd
+root        462      1  0 08:11 ?        00:00:00 /sbin/lvmetad -f
+root        491      1  0 08:11 ?        00:00:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root        494      1  0 08:11 ?        00:00:04 /usr/bin/vmtoolsd
+systemd+    504      1  0 08:11 ?        00:00:00 /lib/systemd/systemd-resolved
+systemd+    506      1  0 08:11 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root        649      2  0 08:11 ?        00:00:00 [kworker/u257:0]
+root        650      2  0 08:11 ?        00:00:00 [kworker/u257:1]
+root        709      1  0 08:11 ?        00:00:00 /usr/lib/udisks2/udisksd
+root        731      1  0 08:11 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+message+    740      1  0 08:11 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        793      1  0 08:11 ?        00:00:00 /usr/sbin/cron -f
+root        794      1  0 08:11 ?        00:00:00 /usr/sbin/acpid
+root        797      1  0 08:11 ?        00:00:00 /usr/sbin/NetworkManager --no-daemon
+root        799      1  0 08:11 ?        00:00:00 /lib/systemd/systemd-logind
+root        800      1  0 08:11 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+syslog      803      1  0 08:11 ?        00:00:00 /usr/sbin/rsyslogd -n
+root        804      1  0 08:11 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+avahi       805      1  0 08:11 ?        00:00:00 avahi-daemon: running [Cathy-virtual-machine.local]
+avahi       811    805  0 08:11 ?        00:00:00 avahi-daemon: chroot helper
+root        813      1  0 08:11 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root        814      1  0 08:11 ?        00:00:00 /usr/sbin/ModemManager
+root        816      1  0 08:11 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root        817      1  0 08:11 ?        00:00:00 /usr/bin/VGAuthService
+kernoops    827      1  0 08:11 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops    830      1  0 08:11 ?        00:00:00 /usr/sbin/kerneloops
+root        851      1  0 08:11 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root        935      1  0 08:11 ?        00:00:00 /usr/sbin/lightdm
+root        949    797  0 08:11 ?        00:00:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-ens33.pid -lf /var/lib/NetworkManager/dhclient-02ff4515-d957-3d69-a9c5-5db805532ec0-ens33.lease -cf /var/lib/NetworkManager/dhclient-ens33.conf ens33
+root        950    935  0 08:11 tty7     00:00:23 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root        955      1  0 08:11 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       1137      1  0 08:11 ?        00:00:00 /usr/lib/upower/upowerd
+root       1196    935  0 08:11 ?        00:00:00 lightdm --session-child 12 19
+osys1000   1235      1  0 08:12 ?        00:00:00 /lib/systemd/systemd --user
+osys1000   1236   1235  0 08:12 ?        00:00:00 (sd-pam)
+osys1000   1251      1  0 08:12 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+osys1000   1254   1196  0 08:12 ?        00:00:00 cinnamon-session --session cinnamon
+osys1000   1267   1235  0 08:12 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+osys1000   1288   1254  0 08:12 ?        00:00:00 [xbrlapi] <defunct>
+osys1000   1318   1254  0 08:12 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+osys1000   1330   1235  0 08:12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+osys1000   1335   1330  0 08:12 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+osys1000   1337   1235  0 08:12 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+osys1000   1349   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-screensaver-proxy
+osys1000   1350   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-keyboard
+osys1000   1351   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-cursor
+osys1000   1352   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-print-notifications
+osys1000   1356   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xsettings
+osys1000   1364   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-wacom
+osys1000   1370   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfsd
+osys1000   1371   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xrandr
+osys1000   1376   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+osys1000   1389   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-orientation
+osys1000   1390   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-automount
+osys1000   1391   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-keyboard
+osys1000   1398      1  0 08:12 ?        00:00:02 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit      1402      1  0 08:12 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+osys1000   1406   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-housekeeping
+osys1000   1407   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-background
+osys1000   1408   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-clipboard
+osys1000   1409   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-media-keys
+osys1000   1410   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-settings
+osys1000   1419   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-sound
+osys1000   1425   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-color
+osys1000   1427   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-power
+osys1000   1432   1254  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-mouse
+osys1000   1445      1  0 08:12 ?        00:00:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-printer
+osys1000   1449   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+osys1000   1459   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+root       1461      2  0 08:12 ?        00:00:00 [krfcommd]
+osys1000   1466   1235  0 08:12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-daemon
+osys1000   1476   1235  0 08:12 ?        00:00:00 /usr/lib/dconf/dconf-service
+osys1000   1487   1235  0 08:12 ?        00:00:00 /usr/lib/gnome-online-accounts/goa-identity-service
+osys1000   1495   1254  0 08:12 ?        00:00:00 /usr/bin/python3 /usr/bin/cinnamon-launcher
+osys1000   1496   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+osys1000   1502   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+osys1000   1506   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+colord     1511      1  0 08:12 ?        00:00:00 /usr/lib/colord/colord
+osys1000   1522   1495  0 08:12 ?        00:00:39 cinnamon --replace
+osys1000   1537      1  0 08:12 ?        00:00:06 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+osys1000   1539   1254  0 08:12 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+osys1000   1544   1254  0 08:12 ?        00:00:01 nemo-desktop
+osys1000   1547   1254  0 08:12 ?        00:00:00 nm-applet
+osys1000   1557   1254  0 08:12 ?        00:00:00 /usr/bin/python3 /usr/bin/cinnamon-killer-daemon
+osys1000   1558   1254  0 08:12 ?        00:00:00 blueberry-obex-agent
+osys1000   1578   1235  0 08:12 ?        00:00:00 /usr/lib/bluetooth/obexd
+osys1000   1585   1370  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.15 /org/gtk/gvfs/exec_spaw/0
+osys1000   1594   1235  0 08:12 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+osys1000   1624   1254  0 08:12 ?        00:00:00 cinnamon-screensaver
+osys1000   1625   1254  0 08:12 ?        00:00:00 /usr/bin/python3 /usr/bin/blueberry-tray
+osys1000   1626   1625  0 08:12 ?        00:00:00 sh -c /usr/lib/blueberry/blueberry-tray.py
+osys1000   1627   1626  0 08:12 ?        00:00:00 python2 /usr/lib/blueberry/blueberry-tray.py
+osys1000   1639   1627  0 08:12 ?        00:00:00 python2 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+osys1000   1640   1639  0 08:12 ?        00:00:00 /usr/sbin/rfkill event
+osys1000   1653      1  0 08:12 ?        00:00:00 mintUpdate
+osys1000   1741   1254  0 08:12 ?        00:00:00 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+osys1000   1753   1235  0 08:16 ?        00:00:30 /usr/lib/gnome-terminal/gnome-terminal-server
+osys1000   1760   1753  0 08:16 pts/0    00:00:00 bash
+root       1905      1  0 08:16 ?        00:00:00 /usr/sbin/cupsd -l
+root       1906      1  0 08:16 ?        00:00:00 /usr/sbin/cups-browsed
+root       1977      2  0 08:17 ?        00:00:00 [kworker/3:0]
+osys1000   2012   1760  0 08:18 pts/0    00:00:00 vi output_file.txt
+root       2023      2  0 08:22 ?        00:00:00 [kworker/0:0]
+root       2182      2  0 08:57 ?        00:00:00 [kworker/2:0]
+root       2240      1  0 08:59 ?        00:00:00 /usr/lib/packagekit/packagekitd
+osys1000   2277   1753  0 09:03 pts/3    00:00:00 bash
+root       2355      2  0 09:14 ?        00:00:01 [kworker/u256:0]
+root       2383      2  0 09:17 ?        00:00:00 [kworker/u256:1]
+root       2384      2  0 09:17 ?        00:00:01 [kworker/u256:2]
+osys1000   2395   1753  0 09:18 pts/1    00:00:00 bash
+osys1000   2404   2395  0 09:18 pts/1    00:00:00 script Cathy_exercise4.txt
+osys1000   2405   2404  0 09:18 pts/2    00:00:00 bash -i
+root       2423      2  0 09:18 ?        00:00:00 [kworker/0:2]
+osys1000   2435   2277  0 09:21 pts/3    00:00:00 man ps
+osys1000   2445   2435  0 09:21 pts/3    00:00:00 pager
+osys1000   2457   2405  0 09:23 pts/2    00:00:00 ps -ef
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ c[Kch[K[Kehc[K[K[K"Hey[K[Kyejung" "Laura" "Sohee" [1@e[1@c[1@h[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C > > [C f i r s t n a m e . t  [A]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx  t 
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat firstname.txt 
+Hyejung Laura Sohee
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "heyj[K[K[Kyejung" >> firstma[K[Kname.txt[1P[C[1@ [1P[C[1@ [1P
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "hyejung" > firstname.txt[12Pcat firstname.txt 
+hyejung
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat firstname.txt echo "hyejung" > firstname.txt>[K[1@>[C[1P[C[C> firstname.txt[1P firstname.txt[1P[1P[1@ [C> firstname.txt[1P[1P[1P[1P[1P[1P[1P[1@L[1@a[1@u[1@r[1@a[1@:[1P[1@"
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "Laura" >> firstname.txt[1@S[1@o[1@t[1P[1@o[1P[1@h[1@e[1@e[C[C[C[C[1P[1P[1P[C[1P[1P
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "Sohee" >> firstname.txtLaura[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pcat firstname.txt 
+hyejung
+Laura
+Sohee
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat firstname.txt | tr[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kecho "Bae" >> lastm[Kname.txt
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "Bae" >> lastname.txt[C[1P[C[1P[1P[1@W[1@h[1@a[1@l[1@e[1@n
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ echo "Whalen" >> lastname.txt[1@P[1@a[1@r[1@t[1P[1P[1P[1P[1P[1P[1P[1@l[1P[1@k
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cat lastname.txt 
+Bae
+Whalen
+Park
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ paste lastne[K[K[K[K[K[Kfirstm[Kname.txt lastname.txt 
+hyejung	Bae
+Laura	Whalen
+Sohee	Park
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cmp cu[K[Kstuff.text sorted_stuff.txt 
+stuff.text sorted_stuff.txt differ: byte 7, line 2
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ com[K[Kmp -l sut[K[Ktuff.text sorted_stuff.txt 
+ 7 172 142
+ 8 145 141
+ 9 166 164
+10 162  12
+11 141 146
+12  12 162
+13 146 157
+14 162 147
+15 157  12
+16 147 172
+17  12 145
+18 142 166
+19 141 162
+20 164 141
+cmp: EOF on sorted_stuff.txt after byte 21
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ^C
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ comm ^V[K[Kst[K[K sut[K[Ktuff.text sorted_stuff.txt 
+		apple
+	bat
+	frog
+		zevra
+comm: file 1 is not in sorted order
+frog
+bat
+frog
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ diff su[Kturr[K[Kff.text sorted_stuff.txt 
+2,3d1
+< zevra
+< frog
+5a4
+> zevra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ diff stuff.text sorted_stuff.txt [C[1@ [1@-[1@d[C[1@ [1P
+2,3d1
+< zevra
+< frog
+5a4
+> zevra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ diff -d stuff.text sorted_stuff.txt [1@c[C[1P
+*** stuff.text	2019-01-23 08:49:07.882227199 -0400
+--- sorted_stuff.txt	2019-01-23 08:51:03.557588935 -0400
+***************
+*** 1,5 ****
+  apple
+- zevra
+- frog
+  bat
+  frog
+--- 1,4 ----
+  apple
+  bat
+  frog
++ zevra
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay -d [K[K[K"Hi [K, How are you"
+ _________________
+< Hi, How are you >
+ -----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay -f ho[K[Kgoh[K[Khostbusters Who you[K[K[K[K[K[K[K[K Oh My God!!
+cowsay -f ghostbusters Oh My Godcowsay "Hi, How are you"
+ _________________________________
+< Oh My Godcowsay Hi, How are you >
+ ---------------------------------
+          \
+           \
+            \          __---__
+                    _-       /--______
+               __--( /     \ )XXXXXXXXXXX\v.
+             .-XXX(   O   O  )XXXXXXXXXXXXXXX-
+            /XXX(       U     )        XXXXXXX\
+          /XXXXX(              )--_  XXXXXXXXXXX\
+         /XXXXX/ (      O     )   XXXXXX   \XXXXX\
+         XXXXX/   /            XXXXXX   \__ \XXXXX
+         XXXXXX__/          XXXXXX         \__---->
+ ---___  XXX__/          XXXXXX      \__         /
+   \-  --__/   ___/\  XXXXXX            /  ___--/=
+    \-\    ___/    XXXXXX              '--- XXXXXX
+       \-\/XXX\ XXXXXX                      /XXXXX
+         \XXXXXXXXX   \                    /XXXXX/
+          \XXXXXX      >                 _/XXXXX/
+            \XXXXX--__/              __-- XXXX/
+             -XXXXXXXX---------------  XXXXXX-
+                \XXXXXXXXXXXXXXXXXXXXXXXXXX/
+                  ""VXXXXXXXXXXXXXXXXXXV""
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ [K]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay -f Dragons "Hi"
+cowsay: Could not find Dragons cowfile!
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay -f Dragons "Hi"[1P[1@ [C[1P[1@d
+cowsay: Could not find dragons cowfile!
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay -f dragons "Hi"[C[1P[C[1P "Hi"n "Hi"
+ ____
+< Hi >
+ ----
+      \                    / \  //\
+       \    |\___/|      /   \//  \\
+            /0  0  \__  /    //  | \ \    
+           /     /  \/_/    //   |  \  \  
+           @_^_@'/   \/_   //    |   \   \ 
+           //_^_/     \/_ //     |    \    \
+        ( //) |        \///      |     \     \
+      ( / /) _|_ /   )  //       |      \     _\
+    ( // /) '/,_ _ _/  ( ; -.    |    _ _\.-~        .-~~~^-.
+  (( / / )) ,-{        _      `-.|.-~-.           .~         `.
+ (( // / ))  '/\      /                 ~-. _ .-~      .-~^-.  \
+ (( /// ))      `.   {            }                   /      \  \
+  (( / ))     .----~-.\        \-'                 .~         \  `. \^-.
+             ///.----..>        \             _ -~             `.  ^-`  ^-_
+               ///-._ _ _ _ _ _ _}^ - - - - ~                     ~-- ,.-~
+                                                                  /.-~
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ figlet Wef[Klcome
+
+Command 'figlet' not found, but can be installed with:
+
+sudo apt install figlet
+sudo apt install toilet
+
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay figlet Welcome
+ ________________
+< figlet Welcome >
+ ----------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ cowsay figlet Welcome[1@-[C[1@f[1@ 
+cowsay: Could not find figlet cowfile!
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ toilet -f mono12 -F metal li[K[KLinux
+
+Command 'toilet' not found, but can be installed with:
+
+sudo apt install toilet
+
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ ^C
+]0;osys1000@Cathy-virtual-machine: ~[01;32mosys1000@Cathy-virtual-machine[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2019-01-23 09:44:39-0400

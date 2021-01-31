@@ -1,0 +1,140 @@
+osys1000@Cathy-virtual-machine:~$ script Cathy_Assignment2.txt
+Script started, file is Cathy_Assignment2.txt
+osys1000@Cathy-virtual-machine:~$ exit
+exit
+Script done, file is Cathy_Assignment2.txt
+osys1000@Cathy-virtual-machine:~$ script assign2_Cathy.txt
+Script started, file is assign2_Cathy.txt
+osys1000@Cathy-virtual-machine:~$ ls -a
+ .                   .gconf                 Public
+ ..                  .gimp-2.8              sorted_stuff.txt
+ assign2_Cathy.txt   .gnupg                 stuff.text
+ .bash_history       .gtkrc-2.0             .sudo_as_admin_successful
+ .bash_logout        .gtkrc-xfce            Templates
+ .bashrc             .ICEauthority          Videos
+ .cache              .local                 vi_file.txt
+ .cinnamon           .mozilla               .Xauthority
+ .config             Music                  xed_file.txt
+ Desktop            'nano file.txt'         .xsession-errors
+ .dmrc               .output_file.txt.swp   .xsession-errors.old
+ Documents           Pictures               .zcompdump
+ Downloads           .profile
+osys1000@Cathy-virtual-machine:~$ ls -a >> folder_listing.txt
+osys1000@Cathy-virtual-machine:~$ pwd >> folder_listing.txt 
+osys1000@Cathy-virtual-machine:~$ cat folder_listing.txt 
+.
+..
+assign2_Cathy.txt
+.bash_history
+.bash_logout
+.bashrc
+.cache
+.cinnamon
+.config
+Desktop
+.dmrc
+Documents
+Downloads
+folder_listing.txt
+.gconf
+.gimp-2.8
+.gnupg
+.gtkrc-2.0
+.gtkrc-xfce
+.ICEauthority
+.local
+.mozilla
+Music
+nano file.txt
+.output_file.txt.swp
+Pictures
+.profile
+Public
+sorted_stuff.txt
+stuff.text
+.sudo_as_admin_successful
+Templates
+Videos
+vi_file.txt
+.Xauthority
+xed_file.txt
+.xsession-errors
+.xsession-errors.old
+.zcompdump
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ find /usr/lib -name "lib" >> libfiles.txt
+osys1000@Cathy-virtual-machine:~$ cat libfiles.txt 
+/usr/lib
+/usr/lib/ruby/2.5.0/rubygems/resolver/molinillo/lib
+/usr/lib/jvm/java-11-openjdk-amd64/lib
+/usr/lib/x86_64-linux-gnu/perl-base/unicore/lib
+/usr/lib/python3/dist-packages/reportlab/lib
+/usr/lib/debug/lib
+/usr/lib/debug/usr/lib
+osys1000@Cathy-virtual-machine:~$ touch cathy.txt
+osys1000@Cathy-virtual-machine:~$ touch Cathy.txt
+osys1000@Cathy-virtual-machine:~$ ls
+ assign2_Cathy.txt   Downloads            Pictures           test.txt
+ cathy.txt           folder_listing.txt   Public             Videos
+ Cathy.txt           libfiles.txt         sorted_stuff.txt   vi_file.txt
+ Desktop             Music                stuff.text         xed_file.txt
+ Documents          'nano file.txt'       Templates
+osys1000@Cathy-virtual-machine:~$ ls | sort -f -r
+xed_file.txt
+vi_file.txt
+Videos
+test.txt
+Templates
+stuff.text
+sorted_stuff.txt
+Public
+Pictures
+nano file.txt
+Music
+libfiles.txt
+folder_listing.txt
+Downloads
+Documents
+Desktop
+Cathy.txt
+cathy.txt
+assign2_Cathy.txt
+osys1000@Cathy-virtual-machine:~$ ls -a 
+ .                   folder_listing.txt     Public
+ ..                  .gconf                 sorted_stuff.txt
+ assign2_Cathy.txt   .gimp-2.8              stuff.text
+ .bash_history       .gnupg                 .sudo_as_admin_successful
+ .bash_logout        .gtkrc-2.0             Templates
+ .bashrc             .gtkrc-xfce            test.txt
+ .cache              .ICEauthority          Videos
+ cathy.txt           libfiles.txt           vi_file.txt
+ Cathy.txt           .local                 .Xauthority
+ .cinnamon           .mozilla               xed_file.txt
+ .config             Music                  .xsession-errors
+ Desktop            'nano file.txt'         .xsession-errors.old
+ .dmrc               .output_file.txt.swp   .zcompdump
+ Documents           Pictures
+ Downloads           .profile
+osys1000@Cathy-virtual-machine:~$ ls -a | find -type f | egrep -i "cathy"
+./Documents/Cathy_exercise3_again.txt
+./Documents/Cathy_script.txt
+./Documents/Cathy_exercise4.txt
+./Documents/Cathy_exercise3.txt
+./Documents/new_Cathy_script.txt
+./Documents/new_Cathy_file.txt
+./Documents/Cathy_exercise2.txt
+./assign2_Cathy.txt
+./cathy.txt
+./Cathy.txt
+osys1000@Cathy-virtual-machine:~$ ls | find -type f | egrep -i "cathy"
+./Documents/Cathy_exercise3_again.txt
+./Documents/Cathy_script.txt
+./Documents/Cathy_exercise4.txt
+./Documents/Cathy_exercise3.txt
+./Documents/new_Cathy_script.txt
+./Documents/new_Cathy_file.txt
+./Documents/Cathy_exercise2.txt
+./assign2_Cathy.txt
+./cathy.txt
+./Cathy.txt
+osys1000@Cathy-virtual-machine:~$ 

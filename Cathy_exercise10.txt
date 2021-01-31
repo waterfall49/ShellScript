@@ -1,0 +1,327 @@
+Script started on Mon 11 Mar 2019 09:27:48 AM ADT
+[osys1000@Cathy-Centos ~]$ cd ..
+[osys1000@Cathy-Centos home]$ cd osys1000/bin
+[osys1000@Cathy-Centos bin]$ ../../../bin
+bash: ../../../bin: Is a directory
+[osys1000@Cathy-Centos bin]$ pwd
+/home/osys1000/bin
+[osys1000@Cathy-Centos bin]$ ../../../bin
+bash: ../../../bin: Is a directory
+[osys1000@Cathy-Centos bin]$ pwd
+/home/osys1000/bin
+[osys1000@Cathy-Centos bin]$ ../../../c../../../d../../../ ../../../[C[C[C[C[C[C[C[C[Cbin
+[osys1000@Cathy-Centos bin]$ pwd
+/bin
+[osys1000@Cathy-Centos bin]$ ..[K[Kcd ../var/log
+[osys1000@Cathy-Centos log]$ cd ../../home/osys1000/v[Kbin
+[osys1000@Cathy-Centos bin]$ pwd
+/home/osys1000/bin
+[osys1000@Cathy-Centos bin]$ c [Kd ../../../etc
+[osys1000@Cathy-Centos etc]$ cd init.d
+[osys1000@Cathy-Centos init.d]$ cd ../cc[K[K../use[Kr/lib
+[osys1000@Cathy-Centos lib]$ pwd
+/usr/lib
+[osys1000@Cathy-Centos lib]$ ../..c../..d../.. ../..[C[C[C[C[C
+[osys1000@Cathy-Centos /]$ cd home/osys1000
+[osys1000@Cathy-Centos ~]$ su
+Password: 
+[root@Cathy-Centos osys1000]# pwd
+/home/osys1000
+[root@Cathy-Centos osys1000]# ../[K[K[Kcd ../../root
+[root@Cathy-Centos ~]# pwd
+/root
+[root@Cathy-Centos ~]# exit
+exit
+[osys1000@Cathy-Centos ~]$ pwd
+/home/osys1000
+[osys1000@Cathy-Centos ~]$ file /t[Ketc/system
+/etc/system: cannot open (No such file or directory)
+[osys1000@Cathy-Centos ~]$ file -b /t[Ketc/system
+cannot open (No such file or directory)
+[osys1000@Cathy-Centos ~]$ imf[K[Knfo file
+[H[J[37;1HWelcome to Info version 5.1. Type h for help, m for menu item.[1;1HFile: coreutils.info,  Node: File permissions,  Next: Date input formats,  Prev: Numeric operations\[2;1H,  Up: Top[4;1H27 File permissions[5;1H*******************[7;1HEach file has a set of "file mode bits" that control the kinds of access[8;1Hthat users have to that file.  They can be represented either in[9;1Hsymbolic form or as an octal number.[11;1H* Menu:[13;1H* Mode Structure::              Structure of file mode bits.[14;1H* Symbolic Modes::              Mnemonic representation of file mode bits.[15;1H* Numeric Modes::               File mode bits as octal numbers.[16;1H* Operator Numeric Modes::      ANDing, ORing, and setting modes octally.[17;1H* Directory Setuid and Setgid:: Set-user-ID and set-group-ID on directories.[36;1H[7m--zz-Info: (coreutils.info.gz)File permissions, 18 lines --All--------------------------------------[0m[37;1HWelcome to Info version 5.1. Type h for help, m for menu item.[37;1HWelcome to Info version 5.1. Type h for help, m for menu item.[1;1H[37;1H[K[1;1HFile: coreutils.info,  Node: Mode Structure,  Next: Symbolic Modes,  Up: File permissions[K[2;1H[K[3;1H27.1 Structure of File Mode Bits[4;1H================================[5;1H[K[6;1HThe file mode bits have two parts: the "file permission bits", which[7;1Hcontrol ordinary access to the file, and "special mode bits", which[K[8;1Haffect only some files.[K[9;1H[K[10;1H   There are three kinds of permissions that a user can have for a file:[11;1H[K[12;1H  1. permission to read the file.  For directories, this means[13;1H     permission to list the contents of the directory.[K[14;1H  2. permission to write to (change) the file.  For directories, this[K[15;1H     means permission to create and remove files in the directory.[16;1H  3. permission to execute the file (run it as a program).  For[K[17;1H     directories, this means permission to access files in the[K[18;1H     directory.[20;1H   There are three categories of users who may have different[21;1Hpermissions to perform any of the above operations on a file:[23;1H  1. the file's owner;[24;1H  2. other users who are in the file's group;[25;1H  3. everyone else.[27;1H   Files are given an owner and group when they are created.  Usually[28;1Hthe owner is the current user and the group is the group of the[29;1Hdirectory the file is in, but this varies with the operating system, the[30;1Hfile system the file is created on, and the way the file is created.[31;1HYou can change the owner and group of a file by using the 'chown' and[32;1H'chgrp' commands.[34;1H   In addition to the three sets of three permissions listed above, the[35;1Hfile mode bits have three special components, which affect only[36;1H[7m--zz-Info: (coreutils.info.gz)Mode Structure, 82 lines --Top----------------------------------------[0m[1;1H[1;1H   In addition to the three sets of three permissions listed above, the[K[2;1Hfile mode bits have three special components, which affect only[3;1Hexecutable files (programs) and, on most systems, directories:[4;1H[K[5;1H  1. Set the process's effective user ID to that of the file upon[6;1H     execution (called the "set-user-ID bit", or sometimes the "setuid[7;1H     bit").  For directories on a few systems, give files created in the[8;1H     directory the same owner as the directory, no matter who creates[9;1H     them, and set the set-user-ID bit of newly-created subdirectories.[10;1H  2. Set the process's effective group ID to that of the file upon[K[11;1H     execution (called the "set-group-ID bit", or sometimes the "setgid[12;1H     bit").  For directories on most systems, give files created in the[13;1H     directory the same group as the directory, no matter what group the[14;1H     user who creates them is in, and set the set-group-ID bit of[K[15;1H     newly-created subdirectories.[K[16;1H  3. Prevent unprivileged users from removing or renaming a file in a[17;1H     directory unless they own the file or the directory; this is called[18;1H     the "restricted deletion flag" for the directory, and is commonly[19;1H     found on world-writable directories like '/tmp'.[20;1H[K[21;1H     For regular files on some older systems, save the program's text[22;1H     image on the swap device so it will load more quickly when run;[23;1H     this is called the "sticky bit".[24;1H[K[25;1H   In addition to the file mode bits listed above, there may be file[26;1Hattributes specific to the file system, e.g., access control lists[27;1H(ACLs), whether a file is compressed, whether a file can be modified[K[28;1H(immutability), and whether a file can be dumped.  These are usually set[29;1Husing programs specific to the file system.  For example:[K[30;1H[K[31;1Hext2[K[32;1H     On GNU and GNU/Linux the file attributes specific to the ext2 file[33;1H     system are set using 'chattr'.[34;1H[K[35;1HFFS[K[36;1H[7m--zz-Info: (coreutils.info.gz)Mode Structure, 82 lines --40%----------------------------------------[0m[1;1H[1;1H[K[2;1HFFS[K[3;1H     On FreeBSD the file flags specific to the FFS file system are set[4;1H     using 'chflags'.[5;1H[K[6;1H   Even if a file's mode bits allow an operation on that file, that[K[7;1Hoperation may still fail, because:[K[8;1H[K[9;1H   * the file-system-specific attributes or flags do not permit it; or[K[10;1H[K[11;1H   * the file system is mounted as read-only.[K[12;1H[K[13;1H   For example, if the immutable attribute is set on a file, it cannot[K[14;1Hbe modified, regardless of the fact that you may have just run 'chmod[15;1Ha+w FILE'.[K[16;1H[K[17;1H[K[18;1H[K[19;1H[K[21;1H[K[22;1H[K[23;1H[K[25;1H[K[26;1H[K[27;1H[K[28;1H[K[29;1H[K[31;1H[K[32;1H[K[33;1H[K[35;1H[K[36;1H[7m--zz-Info: (coreutils.info.gz)Mode Structure, 82 lines --Bot----------------------------------------[0m[1;1H[37;1H[K[osys1000@Cathy-Centos ~]$ man file
+FILE(1)                            BSD General Commands Manual                            FILE(1)[m
+[m
+[1mNAME[0m[m
+     [1mfile[0m — determine file type[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mfile[0m [[1m-bchiklLNnprsvz0[0m] [[1m--apple[0m] [[1m--mime-encoding[0m] [[1m--mime-type[0m] [[1m-e[0m [4mtestname[24m][m
+          [[1m-F[0m [4mseparator[24m] [[1m-f[0m [4mnamefile[24m] [[1m-m[0m [4mmagicfiles[24m] [4mfile[24m [4m...[24m[m
+     [1mfile[0m [1m-C[0m [[1m-m[0m [4mmagicfiles[24m][m
+     [1mfile[0m [[1m--help[0m][m
+[m
+[1mDESCRIPTION[0m[m
+     This manual page documents version 5.11 of the [1mfile[0m command.[m
+[m
+     [1mfile[0m tests each argument in an attempt to classify it.  There are three sets of tests, per‐[m
+     formed in this order: filesystem tests, magic tests, and language tests.  The [4mfirst[24m test[m
+     that succeeds causes the file type to be printed.[m
+[m
+     The type printed will usually contain one of the words [4mtext[24m (the file contains only printing[m
+     characters and a few common control characters and is probably safe to read on an ASCII ter‐[m
+     minal), [4mexecutable[24m (the file contains the result of compiling a program in a form under‐[m
+     standable to some UNIX kernel or another), or [4mdata[24m meaning anything else (data is usually[m
+     “binary” or non-printable).  Exceptions are well-known file formats (core files, tar ar‐[m
+     chives) that are known to contain binary data.  When modifying magic files or the program[m
+     itself, make sure to [4mpreserve[24m [4mthese[24m [4mkeywords[24m.  Users depend on knowing that all the readable[m
+     files in a directory have the word “text” printed.  Don't do as Berkeley did and change[m
+     “shell commands text” to “shell script”.[m
+[m
+     The filesystem tests are based on examining the return from a stat(2) system call.  The pro‐[m
+     gram checks to see if the file is empty, or if it's some sort of special file.  Any known[m
+     file types appropriate to the system you are running on (sockets, symbolic links, or named[m
+     pipes (FIFOs) on those systems that implement them) are intuited if they are defined in the[m
+     system header file <[4msys/stat.h[24m>.[m
+[m
+     The magic tests are used to check for files with data in particular fixed formats.  The[m
+     canonical example of this is a binary executable (compiled program) a.out file, whose format[m
+[7m Manual page file(1) line 1 (press h for help or q to quit)[27m[K[K     is defined in <[4melf.h[24m>, <[4ma.out.h[24m> and possibly <[4mexec.h[24m> in the standard include directory.[m
+[7m Manual page file(1) line 2 (press h for help or q to quit)[27m[K[K     These files have a “magic number” stored in a particular place near the beginning of the[m
+     file that tells the UNIX operating system that the file is a binary executable, and which of[m
+     several types thereof.  The concept of a “magic” has been applied by extension to data[m
+     files.  Any file with some invariant identifier at a small fixed offset into the file can[m
+     usually be described in this way.  The information identifying these files is read from the[m
+     compiled magic file [4m/usr/share/misc/magic.mgc[24m, or the files in the directory[m
+     [4m/usr/share/misc/magic[24m if the compiled file does not exist.  In addition, if [4m$HOME/.magic.mgc[24m[m
+     or [4m$HOME/.magic[24m exists, it will be used in preference to the system magic files.[m
+[m
+     If a file does not match any of the entries in the magic file, it is examined to see if it[m
+     seems to be a text file.  ASCII, ISO-8859-x, non-ISO 8-bit extended-ASCII character sets[m
+     (such as those used on Macintosh and IBM PC systems), UTF-8-encoded Unicode, UTF-16-encoded[m
+     Unicode, and EBCDIC character sets can be distinguished by the different ranges and[m
+     sequences of bytes that constitute printable text in each set.  If a file passes any of[m
+     these tests, its character set is reported.  ASCII, ISO-8859-x, UTF-8, and extended-ASCII[m
+     files are identified as “text” because they will be mostly readable on nearly any terminal;[m
+     UTF-16 and EBCDIC are only “character data” because, while they contain text, it is text[m
+     that will require translation before it can be read.  In addition, [1mfile[0m will attempt to[m
+     determine other characteristics of text-type files.  If the lines of a file are terminated[m
+     by CR, CRLF, or NEL, instead of the Unix-standard LF, this will be reported.  Files that[m
+     contain embedded escape sequences or overstriking will also be identified.[m
+[m
+     Once [1mfile[0m has determined the character set used in a text-type file, it will attempt to[m
+     determine in what language the file is written.  The language tests look for particular[m
+     strings (cf.  <[4mnames.h[24m>) that can appear anywhere in the first few blocks of a file.  For[m
+     example, the keyword [4m.br[24m indicates that the file is most likely a troff(1) input file, just[m
+     as the keyword [4mstruct[24m indicates a C program.  These tests are less reliable than the previ‐[m
+     ous two groups, so they are performed last.  The language test routines also test for some[m
+     miscellany (such as tar(1) archives).[m
+[m
+     Any file that cannot be identified as having been written in any of the character sets[m
+     listed above is simply said to be “data”.[m
+[m
+[1mOPTIONS[0m[m
+     [1m-b[0m, [1m--brief[0m[m
+             Do not prepend filenames to output lines (brief mode).[m
+[7m Manual page file(1) line 38 (press h for help or q to quit)[27m[K[K[m
+     [1m-C[0m, [1m--compile[0m[m
+             Write a [4mmagic.mgc[24m output file that contains a pre-parsed version of the magic file[m
+             or directory.[m
+[m
+     [1m-c[0m, [1m--checking-printout[0m[m
+             Cause a checking printout of the parsed form of the magic file.  This is usually[m
+             used in conjunction with the [1m-m[0m flag to debug a new magic file before installing it.[m
+[m
+     [1m-e[0m, [1m--exclude[0m [4mtestname[24m[m
+             Exclude the test named in [4mtestname[24m from the list of tests made to determine the file[m
+             type.  Valid test names are:[m
+[m
+             apptype   EMX application type (only on EMX).[m
+[m
+             ascii     Various types of text files (this test will try to guess the text encod‐[m
+                       ing, irrespective of the setting of the ‘encoding’ option).[m
+[m
+             encoding  Different text encodings for soft magic tests.[m
+[m
+             tokens    Ignored for backwards compatibility.[m
+[m
+             cdf       Prints details of Compound Document Files.[m
+[m
+             compress  Checks for, and looks inside, compressed files.[m
+[m
+             elf       Prints ELF file details.[m
+[m
+             soft      Consults magic files.[m
+[m
+             tar       Examines tar files.[m
+[m
+     [1m-F[0m, [1m--separator[0m [4mseparator[24m[m
+             Use the specified string as the separator between the filename and the file result[m
+             returned.  Defaults to ‘:’.[m
+[m
+[7m Manual page file(1) line 74 (press h for help or q to quit)[27m[K[K     [1m-f[0m, [1m--files-from[0m [4mnamefile[24m[m
+             Read the names of the files to be examined from [4mnamefile[24m (one per line) before the[m
+             argument list.  Either [4mnamefile[24m or at least one filename argument must be present;[m
+             to test the standard input, use ‘-’ as a filename argument.  Please note that[m
+             [4mnamefile[24m is unwrapped and the enclosed filenames are processed when this option is[m
+             encountered and before any further options processing is done.  This allows one to[m
+             process multiple lists of files with different command line arguments on the same[m
+             [1mfile[0m invocation.  Thus if you want to set the delimiter, you need to do it before[m
+             you specify the list of files, like: “[1m-F[0m [4m@[24m [1m-f[0m [4mnamefile[24m”, instead of: “[1m-f[0m [4mnamefile[24m [1m-F[0m[m
+             [4m@[24m”.[m
+[m
+     [1m-h[0m, [1m--no-dereference[0m[m
+             option causes symlinks not to be followed (on systems that support symbolic links).[m
+             This is the default if the environment variable POSIXLY_CORRECT is not defined.[m
+[m
+     [1m-i[0m, [1m--mime[0m[m
+             Causes the file command to output mime type strings rather than the more traditional[m
+             human readable ones.  Thus it may say ‘text/plain; charset=us-ascii’ rather than[m
+             “ASCII text”.[m
+[m
+     [1m--mime-type[0m, [1m--mime-encoding[0m[m
+             Like [1m-i[0m, but print only the specified element(s).[m
+[m
+     [1m-k[0m, [1m--keep-going[0m[m
+             Don't stop at the first match, keep going.  Subsequent matches will be have the[m
+             string ‘\012- ’ prepended.  (If you want a newline, see the [1m-r[0m option.)[m
+[m
+     [1m-l[0m, [1m--list[0m[m
+             Print information about the strength of each magic pattern.[m
+[m
+     [1m-L[0m, [1m--dereference[0m[m
+             option causes symlinks to be followed, as the like-named option in ls(1) (on systems[m
+             that support symbolic links).  This is the default if the environment variable[m
+             POSIXLY_CORRECT is defined.[m
+[m
+     [1m-l[0m      Shows sorted patterns list in the order which is used for the matching.[m
+[7m Manual page file(1) line 110 (press h for help or q to quit)[27m[K[K[m
+     [1m-m[0m, [1m--magic-file[0m [4mmagicfiles[24m[m
+             Specify an alternate list of files and directories containing magic.  This can be a[m
+             single item, or a colon-separated list.  If a compiled magic file is found alongside[m
+             a file or directory, it will be used instead.[m
+[m
+     [1m-N[0m, [1m--no-pad[0m[m
+             Don't pad filenames so that they align in the output.[m
+[m
+     [1m-n[0m, [1m--no-buffer[0m[m
+             Force stdout to be flushed after checking each file.  This is only useful if check‐[m
+             ing a list of files.  It is intended to be used by programs that want filetype out‐[m
+             put from a pipe.[m
+[m
+     [1m-p[0m, [1m--preserve-date[0m[m
+             On systems that support utime(3) or utimes(2), attempt to preserve the access time[m
+             of files analyzed, to pretend that [1mfile[0m never read them.[m
+[m
+     [1m-r[0m, [1m--raw[0m[m
+             Don't translate unprintable characters to \ooo.  Normally [1mfile[0m translates unprint‐[m
+             able characters to their octal representation.[m
+[m
+     [1m-s[0m, [1m--special-files[0m[m
+             Normally, [1mfile[0m only attempts to read and determine the type of argument files which[m
+             stat(2) reports are ordinary files.  This prevents problems, because reading special[m
+             files may have peculiar consequences.  Specifying the [1m-s[0m option causes [1mfile[0m to also[m
+             read argument files which are block or character special files.  This is useful for[m
+             determining the filesystem types of the data in raw disk partitions, which are block[m
+             special files.  This option also causes [1mfile[0m to disregard the file size as reported[m
+             by stat(2) since on some systems it reports a zero size for raw disk partitions.[m
+[m
+     [1m-v[0m, [1m--version[0m[m
+             Print the version of the program and exit.[m
+[m
+     [1m-z[0m, [1m--uncompress[0m[m
+             Try to look inside compressed files.[m
+[7m Manual page file(1) line 146 (press h for help or q to quit)[27m[K[K[m
+     [1m-0[0m, [1m--print0[0m[m
+             Output a null character ‘\0’ after the end of the filename.  Nice to cut(1) the out‐[m
+             put.  This does not affect the separator which is still printed.[m
+[m
+     [1m--help[0m  Print a help message and exit.[m
+[m
+[1mFILES[0m[m
+     /usr/share/misc/magic.mgc  Default compiled list of magic.[m
+     /usr/share/misc/magic      Directory containing default magic files.[m
+[m
+[1mENVIRONMENT[0m[m
+     The environment variable MAGIC can be used to set the default magic file name.  If that[m
+     variable is set, then [1mfile[0m will not attempt to open [4m$HOME/.magic[24m.  [1mfile[0m adds “[4m.mgc[24m” to the[m
+     value of this variable as appropriate.  However, [4mfile[24m has to exist in order for [4mfile.mime[24m to[m
+     be considered.  The environment variable POSIXLY_CORRECT controls (on systems that support[m
+     symbolic links), whether [1mfile[0m will attempt to follow symlinks or not.  If set, then [1mfile[0m[m
+     follows symlink, otherwise it does not.  This is also controlled by the [1m-L[0m and [1m-h[0m options.[m
+[m
+[1mSEE[0m [1mALSO[0m[m
+     magic(5), hexdump(1), od(1), strings(1),[m
+[m
+[1mSTANDARDS[0m [1mCONFORMANCE[0m[m
+     This program is believed to exceed the System V Interface Definition of FILE(CMD), as near[m
+     as one can determine from the vague language contained therein.  Its behavior is mostly com‐[m
+     patible with the System V program of the same name.  This version knows more magic, however,[m
+     so it will produce different (albeit more accurate) output in many cases.[m
+[m
+     The one significant difference between this version and System V is that this version treats[m
+     any white space as a delimiter, so that spaces in pattern strings must be escaped.  For[m
+     example,[m
+[m
+           >10     string  language impress        (imPRESS data)[m
+[m
+     in an existing magic file would have to be changed to[m
+[m
+[7m Manual page file(1) line 182 (press h for help or q to quit)[27m[K[K[osys1000@Cathy-Centos ~]$ file -s /t[Ketc/system
+/etc/system: cannot open (No such file or directory)
+[osys1000@Cathy-Centos ~]$ cd /ect[K[Kc[Ktc.[K/system
+bash: cd: /etc/system: No such file or directory
+[osys1000@Cathy-Centos ~]$ cd /etc
+[osys1000@Cathy-Centos etc]$ ls
+adjtime                  GREP_COLORS               motd               [0m[01;34mrwtab.d[0m
+aliases                  [01;34mgroff[0m                     [01;36mmtab[0m               [01;34msasl2[0m
+aliases.db               group                     my.cnf             securetty
+[01;34malternatives[0m             group-                    [01;34mmy.cnf.d[0m           [01;34msecurity[0m
+anacrontab               [40;31;01mgrub2.cfg[0m                 nanorc             [01;34mselinux[0m
+asound.conf              [01;34mgrub.d[0m                    [01;34mNetworkManager[0m     services
+[01;34maudisp[0m                   gshadow                   networks           sestatus.conf
+[01;34maudit[0m                    gshadow-                  nsswitch.conf      shadow
+[01;34mbash_completion.d[0m        [01;34mgss[0m                       nsswitch.conf.bak  shadow-
+bashrc                   host.conf                 [01;34mopenldap[0m           shells
+[01;34mbinfmt.d[0m                 hostname                  [01;34mopt[0m                [01;34mskel[0m
+centos-release           hosts                     os-release         [01;34mssh[0m
+centos-release-upstream  hosts.allow               [01;34mpam.d[0m              [01;34mssl[0m
+[01;34mchkconfig.d[0m              hosts.deny                passwd             statetab
+[01;34mcron.d[0m                   [01;36minit.d[0m                    passwd-            [01;34mstatetab.d[0m
+[01;34mcron.daily[0m               inittab                   [01;34mpkcs11[0m             subgid
+cron.deny                inputrc                   [01;34mpki[0m                subuid
+[01;34mcron.hourly[0m              [01;34miproute2[0m                  [01;34mplymouth[0m           sudo.conf
+[01;34mcron.monthly[0m             issue                     [01;34mpm[0m                 sudoers
+crontab                  issue.net                 [01;34mpolkit-1[0m           [01;34msudoers.d[0m
+[01;34mcron.weekly[0m              kdump.conf                [01;34mpopt.d[0m             sudo-ldap.conf
+crypttab                 [01;34mkernel[0m                    [01;34mpostfix[0m            [01;34msysconfig[0m
+csh.cshrc                krb5.conf                 [01;34mppp[0m                sysctl.conf
+csh.login                [01;34mkrb5.conf.d[0m               [01;34mprelink.conf.d[0m     [01;34msysctl.d[0m
+[01;34mdbus-1[0m                   ld.so.cache               printcap           [01;34msystemd[0m
+[01;34mdefault[0m                  ld.so.conf                profile            [01;36msystem-release[0m
+[01;34mdepmod.d[0m                 [01;34mld.so.conf.d[0m              [01;34mprofile.d[0m          system-release-cpe
+[01;34mdhcp[0m                     libaudit.conf             protocols          [01;34mterminfo[0m
+DIR_COLORS               [01;34mlibnl[0m                     [01;34mpython[0m             [01;34mtmpfiles.d[0m
+DIR_COLORS.256color      libuser.conf              [01;36mrc0.d[0m              [01;34mtuned[0m
+DIR_COLORS.lightbgcolor  locale.conf               [01;36mrc1.d[0m              [01;34mudev[0m
+dracut.conf              [01;36mlocaltime[0m                 [01;36mrc2.d[0m              vconsole.conf
+[01;34mdracut.conf.d[0m            login.defs                [01;36mrc3.d[0m              vconsole.conf.bkup
+e2fsck.conf              logrotate.conf            [01;36mrc4.d[0m              vimrc
+environment              [01;34mlogrotate.d[0m               [01;36mrc5.d[0m              virc
+ethertypes               [01;34mlvm[0m                       [01;36mrc6.d[0m              [01;34mvmware-tools[0m
+exports                  lynx.cfg                  [01;34mrc.d[0m               [01;34mwpa_supplicant[0m
+[01;36mfavicon.png[0m              lynx.lss                  [01;36mrc.local[0m           [01;34mX11[0m
+filesystems              lynx-site.cfg             [01;36mredhat-release[0m     [01;34mxdg[0m
+[01;34mfirewalld[0m                machine-id                resolv.conf        [01;34mxinetd.d[0m
+fstab                    magic                     resolv.conf.save   [01;34myum[0m
+fuse.conf                makedumpfile.conf.sample  rpc                yum.conf
+[01;34mgcrypt[0m                   man_db.conf               [01;34mrpm[0m                [01;34myum.repos.d[0m
+GeoIP.conf               mke2fs.conf               rsyslog.conf
+GeoIP.conf.default       [01;34mmodprobe.d[0m                [01;34mrsyslog.d[0m
+[01;34mgnupg[0m                    [01;34mmodules-load.d[0m            rwtab
+[osys1000@Cathy-Centos etc]$ file -s /etc/systemd
+/etc/systemd: directory
+[osys1000@Cathy-Centos etc]$ file -s /var/log
+/var/log: directory
+[osys1000@Cathy-Centos etc]$ file -s /dev/sad[K[Kda
+/dev/sda: no read permission
+[osys1000@Cathy-Centos etc]$ file /dev/d[Kas[K[Ksda
+/dev/sda: block special
+[osys1000@Cathy-Centos etc]$ file -s bin[K[K[K/bin
+/bin: symbolic link to `usr/bin'
+[osys1000@Cathy-Centos etc]$ file -s /lob[K[Kib/kernel/install.d
+/lib/kernel/install.d: directory
+[osys1000@Cathy-Centos etc]$ exit
+exit
+
+Script done on Mon 11 Mar 2019 09:46:02 AM ADT

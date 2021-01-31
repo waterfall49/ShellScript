@@ -1,0 +1,28 @@
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ dir
+a_nice_long_named_file	Downloads     new_Cathy_file.txt  Public
+Cathy_exercise2.txt	Message2.txt  new_file.txt	  Templates
+Desktop			Message.txt   new.txt		  Videos
+Documents		Music	      Pictures
+osys1000@Cathy-virtual-machine:~$ ls
+a_nice_long_named_file  Downloads     new_Cathy_file.txt  Public
+Cathy_exercise2.txt     Message2.txt  new_file.txt        Templates
+Desktop                 Message.txt   new.txt             Videos
+Documents               Music         Pictures
+osys1000@Cathy-virtual-machine:~$ cd Documents/
+osys1000@Cathy-virtual-machine:~/Documents$ pwd
+/home/osys1000/Documents
+osys1000@Cathy-virtual-machine:~/Documents$ ls
+background.png
+osys1000@Cathy-virtual-machine:~/Documents$ cd ~
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+osys1000@Cathy-virtual-machine:~$ cd Documents/
+osys1000@Cathy-virtual-machine:~/Documents$ cd /home/osys1000/
+osys1000@Cathy-virtual-machine:~$ pwd
+/home/osys1000
+
+---------after history 
+osys1000@Cathy-virtual-machine:~$ !21
+clear

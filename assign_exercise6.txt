@@ -1,0 +1,134 @@
+Script started on Mon 04 Feb 2019 09:43:13 AM AST
+[osys1000@Cathy-Centos ~]$ parted
+WARNING: You are not superuser.  Watch out for permissions.
+/dev/mapper/control: open failed: Permission denied
+Failure to communicate with kernel device-mapper driver.
+Incompatible libdevmapper 1.02.149-RHEL7 (2018-07-20) and kernel driver (unknown version).
+Warning: Unable to open /dev/sr0 read-write (Read-only file system).  /dev/sr0 has been opened
+read-only.
+                                                                          GNU Parted 3.1
+Using /dev/sr0
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+                                                                          (parted) print
+Model: NECVMWar VMware IDE CDR10 (scsi)
+Disk /dev/sr0: 4470MB
+Sector size (logical/physical): 2048B/2048B
+Partition Table: msdos
+Disk Flags: 
+
+Number  Start   End     Size    Type     File system  Flags
+ 2      4850kB  41.7MB  36.8MB  primary
+
+                                                                          (parted) exit
+  align-check TYPE N                        check partition N for TYPE(min|opt) alignment
+  help [COMMAND]                           print general help, or help on COMMAND
+  mklabel,mktable LABEL-TYPE               create a new disklabel (partition table)
+  mkpart PART-TYPE [FS-TYPE] START END     make a partition
+  name NUMBER NAME                         name partition NUMBER as NAME
+  print [devices|free|list,all|NUMBER]     display the partition table, available devices, free
+        space, all found partitions, or a particular partition
+  quit                                     exit program
+  rescue START END                         rescue a lost partition near START and END
+  
+  resizepart NUMBER END                    resize partition NUMBER
+  rm NUMBER                                delete partition NUMBER
+  select DEVICE                            choose the device to edit
+  disk_set FLAG STATE                      change the FLAG on selected device
+  disk_toggle [FLAG]                       toggle the state of FLAG on selected device
+  set NUMBER FLAG STATE                    change the FLAG on partition NUMBER
+  toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
+  unit UNIT                                set the default unit to UNIT
+  version                                  display the version number and copyright information of
+        GNU Parted
+                                                                          (parted) quit
+[osys1000@Cathy-Centos ~]$ su
+Password: 
+[root@Cathy-Centos osys1000]# parted
+GNU Parted 3.1
+Using /dev/sda
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+                                                                          (parted) print
+Model: VMware, VMware Virtual S (scsi)
+Disk /dev/sda: 53.7GB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+Disk Flags: 
+
+Number  Start   End     Size    Type     File system     Flags
+ 1      1049kB  31.7GB  31.7GB  primary  xfs             boot
+ 2      31.7GB  51.7GB  20.0GB  primary                  lvm
+ 3      51.7GB  53.7GB  2000MB  primary  linux-swap(v1)
+
+                                                                          (parted) qut[Kit
+[root@Cathy-Centos osys1000]# systemctl sa[Kia[K[Kya[K[Ktatur[Ks network
+[1;32m●[0m network.service - LSB: Bring up/down networking
+   Loaded: loaded (/etc/rc.d/init.d/network; bad; vendor preset: disabled)
+   Active: [1;32mactive (exited)[0m since Mon 2019-02-04 08:13:58 AST; 1h 30min ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 8935 ExecStart=/etc/rc.d/init.d/network start (code=exited, status=0/SUCCESS)
+
+Feb 04 08:13:58 Cathy-Centos systemd[1]: Starting LSB: Bring up/down networking...
+Feb 04 08:13:58 Cathy-Centos network[8935]: Bringing up loopback interface:  [  OK  ]
+Feb 04 08:13:58 Cathy-Centos network[8935]: Bringing up interface ens33:  [  OK  ]
+Feb 04 08:13:58 Cathy-Centos systemd[1]: Started LSB: Bring up/down networking.
+[root@Cathy-Centos osys1000]# ss[Kystemctl sti[Kop new[Ktwork
+[root@Cathy-Centos osys1000]# ping [K[K[K[K[Klynx th[K[Khtto[Kp://www.ebay.ca
+[1;37r[0;10m[4l[?7h[39;49m[39;49m[315m[40m[H[J[37m[40m[J[0;10m[39;49m[315m[40m[35d[0;10;1m[33m[44mGetting http://www.ebay.ca/[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mLooking up www.ebay.ca[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mUnable to locate remote host www.ebay.ca.[0;10m[39;49m[315m[40m[0;10;1m[33m[41mAlert!: Unable to connect to remote host.[K[0;10m[39;49m[315m[40m
+
+[39;49m[K[37;1H
+Looking up www.ebay.ca
+Unable to locate remote host www.ebay.ca.
+Alert!: Unable to connect to remote host.
+
+lynx: Can't access startfile http://www.ebay.ca/
+[root@Cathy-Centos osys1000]# 
+[root@Cathy-Centos osys1000]# systemctl restart new[Ktwork
+[root@Cathy-Centos osys1000]# systemctl restart network[2Plynx http://www.ebay.ca
+[1;37r[0;10m[4l[?7h[39;49m[39;49m[315m[40m[H[J[37m[40m[J[0;10m[39;49m[315m[40m[35d[0;10;1m[33m[44mGetting http://www.ebay.ca/[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mLooking up www.ebay.ca[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mMaking HTTP connection to www.ebay.ca[0;10m[39;49m[315m[40m[0;10;1m[33m[44mSending HTTP request.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP request sent; waiting for response.[0;10m[39;49m[315m[40m[0;10;1m[33m[44mRead 527 bytes of data, 467 bytes/sec.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP/1.0 301 Moved Permanently[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mData transfer complete[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP/1.0 301 Moved Permanently[0;10m[39;49m[315m[40m[0;10;1m[33m[44mUsing https://www.ebay.ca/[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mGetting https://www.ebay.ca/[0;10m[39;49m[315m[40m[0;10;1m[33m[44mLooking up www.ebay.ca[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mMaking HTTPS connection to www.ebay.ca[0;10m[39;49m[315m[40m[0;10;1m[33m[44mSSL callback:ok, preverify_ok=1, ssl_okay=0[0;10m[39;49m[315m[40m[0;10;1m[33m[44mVerified connection to www.ebay.ca (subj=www.ebay.ca)[0;10m[39;49m[315m[40m[0;10;1m[33m[44mCertificate issued by: /C=US/O=DigiCert Inc/CN=DigiCert SHA2 Secure Server CA[0;10m[39;49m[315m[40m[0;10;1m[33m[44mSecure 128-bit TLSv1/SSLv3 (ECDHE-RSA-AES128-GCM-SHA256) HTTP connection[K[0;10m[39;49m[315m[40m[3G[0;10;1m[33m[44mnding HTTP request.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP request sent; waiting for response.[0;10m[39;49m[315m[40m[0;10;1m[33m[44mRead 1.5 KiB of data, 4.1 KiB/sec.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP/1.0 200 OK[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mwww.ebay.ca cookie: nonses=CgADKACBlvkPFYjhjMmUxMDExNjgwYWI0ZDliMDlkYmM5 Allow? (Y/N/Always/neVer)[0;10m[39;49m[315m[40m[0;10;1m[33m[44mRejecting this cookie.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mwww.ebay.ca cookie: =CgAD4ACBcWZPFYjhjMmUxMDExNjgwYWI0ZDliMDlkYmM5ZmZmY Allow? (Y/N/Always/neVer)[0;10m[39;49m[315m[40m[0;10;1m[33m[44mAllowing this cookie.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mwww.ebay.ca cookie: ebay=%5Esbf%3D%23000000%5E Allow? (Y/N/Always/neVer)[0;10m[39;49m[315m[40m[0;10;1m[33m[44mAllowing this cookie.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mRead 604 bytes of data, 20 bytes/sec.[0;10m[39;49m[315m[40m[0;10;1m[33m[44mData transfer complete[K[0;10m[39;49m[315m[40m[H[35m[40m#[1;26HElectronics, Cars, Fashion, Collectibles, Coupons and More | eBay (p1 of 2)[2;4H[0;10;1m[37m[40m#alternate alternate alternate alternate alternate alternate alternate alternate alternate
+[4Galternate alternate alternate alternate alternate alternate alternate alternate alternate
+[4Galternate alternate alternate
+
+[4G[0;10m[32m[40mSkip to main content
+
+eBay Logo[33m[40m eBay Logo
+
+[4G[0;10;1m[37m[40m(BUTTON) Shop by category
+
+Shop by category
+
+[4G[0;10m[35m[40mEnter your search keyword[0;10;1m[37m[44m __________________________________________________
+[4G[37m[40m[All Categories]
+[4GSearch[70X[16;80H[0;10m[32m[40mAdvanced
+
+[4G[35m[40m  * Hi ([32m[40mSign in[35m[40m to bid or buy)
+[4G  * [32m[40meBay Deals
+[4G[35m[40m  * [32m[40mSell
+[4G[35m[40m  * [32m[40mHelp & Contact
+
+[4G[35m[40m  * [32m[40mCurrent language EnglishEnglish[24;9H[35m[40m  + [32m[40mFrançais
+[4G[35m[40m  * [32m[40mMy eBayExpand My eBay[26;9H[35m[40m  + [32m[40mSummary[27;9H[35m[40m  + [32m[40mRecently Viewed[28;9H[35m[40m  + [32m[40mBids/Offers[29;9H[35m[40m  + [32m[40mWatch List[30;9H[35m[40m  + [32m[40mPurchase History[31;9H[35m[40m  + [32m[40mSelling[32;9H[35m[40m  + [32m[40mSaved Searches[33;9H[35m[40m  + [32m[40mSaved Sellers[34;9H[35m[40m  + [32m[40mMessages[37;100H[0;10m[39;49m[315m[40m[1;25H[35m[40mElectronics, Cars, Fashion, Collectibles, Coupons and More | eBay (p1 of 14[37d[0;10m[39;49m[315m[40m[36;3H[37m[40mArrow keys: Up and Down to move.  Right to follow a link; Left to go back.
+ H)elp O)ptions P)rint G)o M)ain screen Q)uit /=search [delete]=history list [0;10m[39;49m[315m[40m[35d[0;10;1m[33m[44m(NORMAL LINK) Use right-arrow or <return> to activate.[0;10m[39;49m[315m[40m[2;5H[0;10;1m[33m[40malternate[37;100H[0;10m[39;49m[315m[40m[35d[0;10;1m[33m[44mGetting https://www.ebay.at/[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mLooking up www.ebay.at[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mMaking HTTPS connection to www.ebay.at[0;10m[39;49m[315m[40m[0;10;1m[33m[44mSSL callback:ok, preverify_ok=1, ssl_okay=0[0;10m[39;49m[315m[40m[0;10;1m[33m[44mVerified connection to www.ebay.at (subj=www.ebay.at)[0;10m[39;49m[315m[40m[0;10;1m[33m[44mCertificate issued by: /C=US/O=DigiCert Inc/CN=DigiCert SHA2 Secure Server CA[0;10m[39;49m[315m[40m[0;10;1m[33m[44mSecure 128-bit TLSv1/SSLv3 (ECDHE-RSA-AES128-GCM-SHA256) HTTP connection[K[0;10m[39;49m[315m[40m[3G[0;10;1m[33m[44mnding HTTP request.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP request sent; waiting for response.[0;10m[39;49m[315m[40m[0;10;1m[33m[44mRead 1.5 KiB of data, 3.3 KiB/sec.[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mHTTP/1.0 200 OK[K[0;10m[39;49m[315m[40m[0;10;1m[33m[44mwww.ebay.at cookie: nonses=CgADKACBlvkPkYjhjMzVhNTgxNjgwYWRkODk3NmQyNDc0 Allow? (Y/N/Always/neVer)[0;10m[39;49m[315m[40m[39;49m
+
+[K[37;1H
+[1]+  Stopped                 lynx http://www.ebay.ca
+[root@Cathy-Centos osys1000]# ps
+   PID TTY          TIME CMD
+ 10298 pts/1    00:00:00 su
+ 10302 pts/1    00:00:00 bash
+ 10696 pts/1    00:00:00 lynx
+ 10701 pts/1    00:00:00 lynx <defunct>
+ 10702 pts/1    00:00:00 ps
+[root@Cathy-Centos osys1000]# kill -9 10701
+[root@Cathy-Centos osys1000]# kill -9 10701[K[K[K696
+[root@Cathy-Centos osys1000]# ps
+   PID TTY          TIME CMD
+ 10298 pts/1    00:00:00 su
+ 10302 pts/1    00:00:00 bash
+ 10704 pts/1    00:00:00 ps
+[1]+  Killed                  lynx http://www.ebay.ca
+[root@Cathy-Centos osys1000]# exit
+exit
+[osys1000@Cathy-Centos ~]$ exit
+exit
+
+Script done on Mon 04 Feb 2019 09:50:06 AM AST
